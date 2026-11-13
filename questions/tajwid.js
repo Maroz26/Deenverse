@@ -599,7 +599,7 @@ window.questionBankParts.push(...[
     "index": 198,
     "question": {
       "kategori": "Tajwid",
-      "tingkat": "Hard,
+      "tingkat": "Hard",
       "xp": 150,
       "soal": "Sifat 'Shafir' (suara burung/siulan) adalah suara tambahan yang tajam yang keluar di antara ujung lidah dan gigi seri. Sifat ini dimiliki oleh tiga huruf, yaitu...",
       "opsi": [
