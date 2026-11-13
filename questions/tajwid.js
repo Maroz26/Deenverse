@@ -96,7 +96,7 @@ window.questionBankParts.push(...[
         "Mad Layyin (Lin)",
         "Mad Iwad",
         "Mad Tamkin",
-        "Mad Badal"
+        "Mad Badal"di
       ],
       "jawabanBenar": 0,
       "penjelasan": "Mad Layyin atau Mad Lin terjadi pada wau mati atau ya mati yang jatuh setelah fathah dan dibaca waqaf. Ini menghasilkan bunyi yang lembut."
