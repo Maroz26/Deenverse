@@ -179,8 +179,8 @@ window.questionBankParts.push(...[
       "soal": "Seorang yang sedang ihram haji atau umrah diharamkan memotong rambut, memakai wewangian, dan berburu. Jika ia melanggar salah satu larangan (seperti mencukur rambut karena sakit), ia wajib membayar denda yang disebut...",
       "opsi": [
         "Kafarat",
-        "Dam",
-        "Fidyah",
+        "Dam / Fidyah",
+        "Gharam",
         "Zakat"
       ],
       "jawabanBenar": 1,
