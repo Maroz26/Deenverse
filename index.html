@@ -91,6 +91,8 @@
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col items-center py-8 px-4 relative overflow-x-hidden">
 
+    <div id="cloud-sync-msg" class="hidden fixed top-4 left-4 right-4 z-[120] max-w-2xl mx-auto p-4 rounded-xl bg-red-950/90 text-red-200 text-sm font-semibold shadow-lg" role="status" aria-live="polite"></div>
+
     <!-- Efek Cahaya Latar Belakang -->
     <div class="fixed top-[-10%] left-[-10%] w-96 h-96 bg-emerald-600/20 rounded-full blur-[120px] pointer-events-none"></div>
     <div class="fixed bottom-[-10%] right-[-10%] w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
@@ -104,7 +106,7 @@
                 <span class="text-5xl">🕋</span>
             </div>
             <h1 class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-400 drop-shadow-lg leading-none tracking-tight">DEEN<br><span class="text-emerald-400 text-5xl">VERSE</span></h1>
-            <p class="text-emerald-500 font-bold tracking-[0.2em] text-xs mt-3 uppercase">Cerdas Cermat Islam</p>
+            <p class="text-emerald-500 font-bold tracking-[0.2em] text-xs mt-3 uppercase">Semesta keilmuan Islam</p>
         </div>
 
         <div class="panel-game p-6 w-full card-anim relative">
@@ -483,8 +485,53 @@
 		let currentUser = localStorage.getItem('ccDB_session') || null;
         // Menggunakan key yang SAMA dengan sebelumnya agar progres tidak hilang
         let usersDB = JSON.parse(localStorage.getItem('ccDB_Ultimate')) || {};
+        let firebaseUserId = null;
+        let firebaseWriteQueue = Promise.resolve();
 
-        function saveDB() { localStorage.setItem('ccDB_Ultimate', JSON.stringify(usersDB)); }
+        function reportFirebaseError(error) {
+            console.error("Firebase error:", error);
+            const box = document.getElementById('cloud-sync-msg');
+            box.innerText = "Sinkronisasi Firebase gagal. Periksa koneksi dan aturan Firebase, lalu coba lagi.";
+            box.classList.remove('hidden');
+        }
+        function saveDB() {
+            localStorage.setItem('ccDB_Ultimate', JSON.stringify(usersDB));
+            if (!firebaseUserId || !currentUser || !usersDB[currentUser]) return Promise.resolve();
+
+            const apiPromise = window.firebaseReady;
+            const profile = { ...usersDB[currentUser], username: currentUser };
+            delete profile.password;
+            const save = firebaseWriteQueue.catch(() => undefined).then(async () => {
+                const api = await apiPromise;
+                await api.setDoc(api.doc(api.db, 'users', firebaseUserId), profile);
+            });
+            firebaseWriteQueue = save;
+            save.catch(reportFirebaseError);
+            return save;
+        }
+        async function getFirebaseApi() {
+            if (!window.firebaseReady) throw new Error("Firebase belum siap dimuat.");
+            return await window.firebaseReady;
+        }
+        function validUsername(user) {
+            return user.length > 0 && user.length <= 32;
+        }
+        function initialProfile() {
+            return {
+                level: 1,
+                xp: 0,
+                queue: Array.from({ length: bankSoal.length }, (_, i) => i),
+                highestKnownLength: bankSoal.length,
+                currentQuestion: null
+            };
+        }
+        function copyLegacyProfile(user, password) {
+            const legacy = usersDB[user];
+            if (!legacy || legacy.password !== password) return null;
+            const profile = { ...legacy, username: user };
+            delete profile.password;
+            return profile;
+        }
         function showMsg(msg, isError = true) {
             const msgBox = document.getElementById('auth-msg');
             msgBox.innerText = msg;
@@ -493,30 +540,134 @@
                           "mt-4 p-4 rounded-2xl bg-emerald-950/30 text-emerald-400 text-sm font-semibold shadow-[inset_4px_0_0_0_#10b981]";
         }
 
-        function register() {
+        async function register() {
             const user = document.getElementById('username').value.trim();
             const pass = document.getElementById('password').value.trim();
             if (!user || !pass) return showMsg("Username dan password wajib diisi!");
-            if (usersDB[user]) return showMsg("Username sudah terpakai! Silakan Login.");
-
-            let initQueue = Array.from({length: bankSoal.length}, (_, i) => i);
-            usersDB[user] = { password: pass, level: 1, xp: 0, queue: initQueue, highestKnownLength: bankSoal.length, currentQuestion: null };
-            saveDB(); showMsg("Akun tercipta! Silakan klik Masuk.", false);
+            if (!validUsername(user)) return showMsg("Username maksimal 32 karakter.");
+            if (usersDB[user] && usersDB[user].password) return showMsg("Akun lama sudah ada. Klik Masuk untuk memindahkan progresnya.");
+            try {
+                const api = await getFirebaseApi();
+                await api.authReady;
+                if (api.auth.currentUser) await api.signOut(api.auth);
+                const credential = await api.createUserWithEmailAndPassword(api.auth, await api.emailForUsername(user), pass);
+                const profile = initialProfile();
+                profile.username = user;
+                await api.setDoc(api.doc(api.db, 'users', credential.user.uid), profile);
+                await api.signOut(api.auth);
+                showMsg("Akun tercipta! Silakan klik Masuk.", false);
+            } catch (error) {
+                console.error("Gagal membuat akun:", error);
+                showMsg(error.code === 'auth/email-already-in-use'
+                    ? "Username sudah terpakai! Silakan Login."
+                    : error.code === 'auth/weak-password'
+                        ? "Password minimal 6 karakter."
+                        : "Akun gagal dibuat. Pastikan Firebase Authentication aktif dan koneksi tersedia.");
+            }
         }
 
-		function login() {
+		async function login() {
 			const user = document.getElementById('username').value.trim();
 			const pass = document.getElementById('password').value.trim();
 			if (!user || !pass) return showMsg("Masukkan username dan password!");
-			if (!usersDB[user]) return showMsg("Username tidak ditemukan!");
-			if (usersDB[user].password !== pass) return showMsg("Password salah!");
+			if (!validUsername(user)) return showMsg("Username maksimal 32 karakter.");
+            try {
+                const api = await getFirebaseApi();
+                await api.authReady;
+                if (api.auth.currentUser) await api.signOut(api.auth);
+			    const authEmail = await api.emailForUsername(user);
 
-			currentUser = user; syncNewQuestions();
-			localStorage.setItem('ccDB_session', currentUser);  // ← TAMBAHKAN BARIS INI
-			openDashboard();
+                let credential;
+                let legacyProfile = null;
+                let legacyDocumentRef = null;
+                try {
+                    credential = await api.signInWithEmailAndPassword(api.auth, authEmail, pass);
+                } catch (error) {
+                    if (error.code !== 'auth/user-not-found' && error.code !== 'auth/invalid-credential') throw error;
+                    legacyProfile = copyLegacyProfile(user, pass);
+                    if (!legacyProfile) {
+                        legacyDocumentRef = api.doc(api.db, 'users', user);
+                        const legacySnapshot = await api.getDoc(legacyDocumentRef);
+                        if (legacySnapshot.exists() && legacySnapshot.data().password === pass) {
+                            legacyProfile = { ...legacySnapshot.data(), username: user };
+                            delete legacyProfile.password;
+                        }
+                    }
+                    if (!legacyProfile) {
+                        if (error.code === 'auth/user-not-found') return showMsg("Akun lama tidak ditemukan di perangkat ini. Login dengan akun Firebase atau pulihkan data lama terlebih dahulu.");
+                        throw error;
+                    }
+                    try {
+                        credential = await api.createUserWithEmailAndPassword(api.auth, authEmail, pass);
+                    } catch (createError) {
+                        if (createError.code === 'auth/email-already-in-use') throw error;
+                        throw createError;
+                    }
+                }
+
+                const profileRef = api.doc(api.db, 'users', credential.user.uid);
+                const profileSnapshot = await api.getDoc(profileRef);
+                let profile = profileSnapshot.exists() ? profileSnapshot.data() : legacyProfile;
+                if (!profile) {
+                    profile = copyLegacyProfile(user, pass);
+                    if (!profile) {
+                        legacyDocumentRef = api.doc(api.db, 'users', user);
+                        const legacySnapshot = await api.getDoc(legacyDocumentRef);
+                        if (legacySnapshot.exists()) {
+                            profile = { ...legacySnapshot.data(), username: user };
+                            delete profile.password;
+                        }
+                    }
+                    if (!profile) profile = initialProfile();
+                }
+                if (!profile) {
+                    await api.signOut(api.auth);
+                    return showMsg("Data profil Firebase tidak ditemukan. Hubungi admin untuk memulihkan akun.");
+                }
+
+                profile.username = user;
+                delete profile.password;
+                if (!profileSnapshot.exists()) await api.setDoc(profileRef, profile);
+                if (legacyDocumentRef) {
+                    try {
+                        await api.deleteDoc(legacyDocumentRef);
+                    } catch (error) {
+                        console.error("Profil lama masih perlu dihapus dari Firestore:", error);
+                        const box = document.getElementById('cloud-sync-msg');
+                        box.innerText = "Akun berhasil dipindahkan, tetapi data lama perlu dihapus dari Firestore Console.";
+                        box.classList.remove('hidden');
+                    }
+                }
+                currentUser = user;
+                firebaseUserId = credential.user.uid;
+                usersDB[user] = profile;
+                localStorage.setItem('ccDB_session', currentUser);
+                await saveDB();
+                syncNewQuestions();
+                document.getElementById('cloud-sync-msg').classList.add('hidden');
+                openDashboard();
+			} catch (error) {
+                console.error("Gagal login:", error);
+                const message = error.code === 'auth/invalid-credential' || error.code === 'auth/wrong-password'
+                    ? "Username atau password salah."
+                    : error.code === 'auth/user-not-found'
+                        ? "Username tidak ditemukan."
+                        : error.code === 'permission-denied' || error.code === 'firestore/permission-denied'
+                            ? "Migrasi akun lama ditolak oleh aturan Firestore. Periksa akses data lama di Firebase."
+                        : "Login gagal. Periksa koneksi dan konfigurasi Firebase Authentication.";
+                showMsg(message);
+			}
 		}
-		function logout() {
+		async function logout() {
+            try {
+                const api = await getFirebaseApi();
+                if (api.auth.currentUser) await api.signOut(api.auth);
+            } catch (error) {
+                reportFirebaseError(error);
+                return;
+            }
 			currentUser = null;
+            firebaseUserId = null;
 			localStorage.removeItem('ccDB_session');   // ← TAMBAHKAN BARIS INI
 			document.getElementById('username').value = ""; document.getElementById('password').value = "";
 			showMsg("", false);
@@ -889,24 +1040,46 @@
             $('set-user').value = currentUser; ['set-cur', 'set-new', 'set-conf'].forEach(id => $(id).value = '');
             msgBox('set-msg', '', true); go('settings-screen');
         }
-        function saveSettings() {
+        async function saveSettings() {
             const u = usersDB[currentUser], name = $('set-user').value.trim(), cur = $('set-cur').value.trim(), np = $('set-new').value.trim(), cf = $('set-conf').value.trim();
             const err = m => msgBox('set-msg', m, false);
             if (!cur) return err('Masukkan password saat ini untuk menyimpan perubahan.');
-            if (u.password !== cur) return err('Password saat ini salah!');
             if (!name) return err('Username tidak boleh kosong.');
-            if (name !== currentUser && usersDB[name]) return err('Username sudah terpakai!');
+            if (!validUsername(name)) return err('Username maksimal 32 karakter.');
             if (np !== cf) return err('Konfirmasi password baru tidak cocok.');
             if (name === currentUser && !np) return err('Belum ada yang diubah.');
-            if (np) u.password = np;
-			if (name !== currentUser) { 
-				usersDB[name] = u; 
-				delete usersDB[currentUser]; 
-				currentUser = name; 
-				localStorage.setItem('ccDB_session', currentUser);   // ← TAMBAHKAN
-			}			
-            saveDB(); ['set-cur', 'set-new', 'set-conf'].forEach(id => $(id).value = '');
-            msgBox('set-msg', 'Perubahan tersimpan.', true);
+            try {
+                const api = await getFirebaseApi();
+                const authUser = api.auth.currentUser;
+                if (!authUser) return err('Sesi login berakhir. Silakan login kembali.');
+                const credential = api.EmailAuthProvider.credential(authUser.email, cur);
+                await api.reauthenticateWithCredential(authUser, credential);
+                const newEmail = await api.emailForUsername(name);
+                if (name !== currentUser && newEmail !== authUser.email) {
+                    await api.updateEmail(authUser, newEmail);
+                }
+                if (np) await api.updatePassword(authUser, np);
+
+                if (name !== currentUser) {
+                    usersDB[name] = u;
+                    delete usersDB[currentUser];
+                    currentUser = name;
+                    localStorage.setItem('ccDB_session', currentUser);
+                }
+                await saveDB();
+                ['set-cur', 'set-new', 'set-conf'].forEach(id => $(id).value = '');
+                msgBox('set-msg', 'Perubahan tersimpan.', true);
+            } catch (error) {
+                console.error("Gagal menyimpan pengaturan:", error);
+                const message = error.code === 'auth/wrong-password' || error.code === 'auth/invalid-credential'
+                    ? 'Password saat ini salah!'
+                    : error.code === 'auth/email-already-in-use'
+                        ? 'Username sudah terpakai!'
+                        : error.code === 'auth/weak-password'
+                            ? 'Password baru minimal 6 karakter.'
+                            : 'Perubahan gagal disimpan. Periksa koneksi Firebase dan coba lagi.';
+                err(message);
+            }
         }
 
         // --- Pop-up penjelasan mode ---
@@ -930,28 +1103,39 @@
         }
         function closeInfo() { $('info-modal').classList.add('hidden-screen'); }
         document.addEventListener('keydown', e => { if (e.key === 'Escape') closeInfo(); });
-				// --- AUTO-RESTORE SESSION ---
-		// Kalau sebelumnya sudah login, langsung masuk dashboard tanpa lewat login page
-		(function restoreSession() {
-			if (currentUser && usersDB[currentUser]) {
-				syncNewQuestions();
-				openDashboard();
-			} else {
-				// Kalau session tidak valid, bersihkan
-				currentUser = null;
-				localStorage.removeItem('ccDB_session');
-			}
-		})();
+        async function restoreSession() {
+            try {
+                const api = await getFirebaseApi();
+                const authUser = await api.authReady;
+                if (!authUser) {
+                    currentUser = null;
+                    localStorage.removeItem('ccDB_session');
+                    return;
+                }
+                const profileSnapshot = await api.getDoc(api.doc(api.db, 'users', authUser.uid));
+                if (!profileSnapshot.exists()) throw new Error("Profil akun Firebase tidak ditemukan.");
+                const profile = profileSnapshot.data();
+                if (!profile.username) throw new Error("Profil Firebase tidak memiliki username.");
+                currentUser = profile.username;
+                firebaseUserId = authUser.uid;
+                usersDB[currentUser] = profile;
+                localStorage.setItem('ccDB_session', currentUser);
+                await saveDB();
+                syncNewQuestions();
+                openDashboard();
+            } catch (error) {
+                reportFirebaseError(error);
+                currentUser = null;
+                firebaseUserId = null;
+                localStorage.removeItem('ccDB_session');
+            }
+        }
     </script>
     <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/13.3.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.3.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateEmail, updatePassword, reauthenticateWithCredential, EmailAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+        import { getFirestore, doc, setDoc, getDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         const firebaseConfig = {
             apiKey: "AIzaSyCU_Gf_GmP4oCXsW1o5uTiG45lg0gomVtk",
             authDomain: "rusyaidan-islamic-scholarship.firebaseapp.com",
@@ -962,9 +1146,47 @@
             measurementId: "G-ZFMMTW648K"
         };
 
-        // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        const authReady = new Promise(resolve => {
+            const unsubscribe = onAuthStateChanged(auth, user => {
+                unsubscribe();
+                resolve(user);
+            });
+        });
+        const emailForUsername = async username => {
+            const bytes = new TextEncoder().encode(username.toLowerCase());
+            const digest = new Uint8Array(await crypto.subtle.digest('SHA-256', bytes));
+            const binary = Array.from(digest, byte => String.fromCharCode(byte)).join('');
+            const encoded = btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+            return `u${encoded}@accounts.deenverse.app`;
+        };
+
+        window.firebaseReady = Promise.resolve({
+            auth,
+            db,
+            authReady,
+            doc,
+            setDoc,
+            getDoc,
+            deleteDoc,
+            createUserWithEmailAndPassword,
+            signInWithEmailAndPassword,
+            signOut,
+            updateEmail,
+            updatePassword,
+            reauthenticateWithCredential,
+            EmailAuthProvider,
+            emailForUsername
+        });
+        window.firebaseReady.then(() => window.restoreSession());
+        window.firebaseReady.catch(error => {
+            console.error("Firebase gagal diinisialisasi:", error);
+            const box = document.getElementById('cloud-sync-msg');
+            box.innerText = "Firebase gagal dimuat. Periksa konfigurasi dan koneksi internet.";
+            box.classList.remove('hidden');
+        });
+        </script>
 </body>
 </html>
