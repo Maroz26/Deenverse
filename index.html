@@ -475,7 +475,56 @@
     <script src="questions/tajwid.js"></script>
     <script src="questions/akhlak.js"></script>
 
+    
+
     <script>
+        // --- EFEK SUARA (Web Audio API) ---
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+        function playSound(type) {
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            const osc = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+            
+            osc.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+
+            const now = audioCtx.currentTime;
+
+            if (type === 'click') {
+                // Suara ketukan pendek saat menekan pilihan
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(400, now);
+                osc.frequency.exponentialRampToValueAtTime(200, now + 0.08);
+                gainNode.gain.setValueAtTime(0.15, now);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
+                osc.start(now);
+                osc.stop(now + 0.08);
+            } 
+            else if (type === 'correct') {
+                // Suara "Tiiing!" gembira bernada tinggi untuk jawaban benar
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(587.33, now); // Nada D5
+                osc.frequency.setValueAtTime(880, now + 0.1);    // Nada A5
+                gainNode.gain.setValueAtTime(0.2, now);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+                osc.start(now);
+                osc.stop(now + 0.4);
+            }
+            else if (type === 'wrong') {
+                // Suara "Buzzer" rendah untuk jawaban salah
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(150, now);
+                osc.frequency.setValueAtTime(100, now + 0.15);
+                gainNode.gain.setValueAtTime(0.2, now);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+                osc.start(now);
+                osc.stop(now + 0.3);
+            }
+        }
+
         // --- BANK SOAL ---
         const bankSoal = window.questionBankParts
             .sort((a, b) => a.index - b.index)
@@ -744,11 +793,17 @@
 
             const optionsBox = document.getElementById('options-container');
             optionsBox.innerHTML = "";
-            q.opsi.forEach((opt, index) => {
+            q.opsi.forEach((opt, index) => {    
                 const btn = document.createElement('button');
                 btn.className = "w-full text-left p-4 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 transition-all border border-slate-700 focus:outline-none font-medium text-slate-200 hover:text-white hover:border-slate-500 shadow-sm active:scale-[0.99]";
                 btn.innerHTML = `<span class="inline-block w-8 h-8 text-center leading-8 rounded-lg bg-slate-700 text-slate-300 mr-3 text-sm">${String.fromCharCode(65 + index)}</span> ${opt}`;
-                btn.onclick = () => checkAnswer(index, btn);
+                
+                // 👉 TARUH DI SINI (Suara saat opsi diklik)
+                btn.onclick = () => {
+                    playSound('click');
+                    checkAnswer(index, btn);
+                };
+                
                 optionsBox.appendChild(btn);
             });
 
@@ -758,53 +813,56 @@
             card.classList.remove('card-anim'); void card.offsetWidth; card.classList.add('card-anim');
         }
 
-			function checkAnswer(selectedIndex, btnElement) {
-						let u = usersDB[currentUser]; const q = bankSoal[u.currentQuestion];
-                        const levelAtQuestionStart = u.level;
-						const buttons = document.getElementById('options-container').children;
-						const expBox = document.getElementById('explanation-box');
-						const expTitle = document.getElementById('explanation-title');
-						const expIcon = document.getElementById('exp-icon');
-						
-						for (let b of buttons) { b.disabled = true; b.classList.add('opacity-50'); }
-						btnElement.classList.remove('opacity-50');
+function checkAnswer(selectedIndex, btnElement) {
+                let u = usersDB[currentUser]; const q = bankSoal[u.currentQuestion];
+                const levelAtQuestionStart = u.level;
+                const buttons = document.getElementById('options-container').children;
+                const expBox = document.getElementById('explanation-box');
+                const expTitle = document.getElementById('explanation-title');
+                const expIcon = document.getElementById('exp-icon');
+                
+                for (let b of buttons) { b.disabled = true; b.classList.add('opacity-50'); }
+                btnElement.classList.remove('opacity-50');
 
-						// Tambahkan tracker untuk dihitung Akurasinya
-						u.totalAnswered = (u.totalAnswered || 0) + 1;
+                u.totalAnswered = (u.totalAnswered || 0) + 1;
 
-						if (selectedIndex === q.jawabanBenar) {
-							u.correctAnswers = (u.correctAnswers || 0) + 1; // Hitung jawaban benar
-							btnElement.classList.replace('bg-slate-800/80', 'bg-emerald-900/40');
-							btnElement.classList.replace('border-slate-700', 'border-emerald-500');
-							
-							expBox.querySelector('div').className = "p-5 bg-emerald-950/30 border-l-4 border-emerald-500";
-							expTitle.className = "font-bold text-emerald-400 text-lg";
-							expTitle.innerText = "Jawaban Tepat! (+ " + q.xp + " XP)";
-							expIcon.innerText = "✨";
-							addXP(q.xp);
-						} else {
-							btnElement.classList.replace('bg-slate-800/80', 'bg-red-900/40');
-							btnElement.classList.replace('border-slate-700', 'border-red-500');
-							
-							let correctBtn = buttons[q.jawabanBenar];
-							correctBtn.classList.remove('opacity-50');
-							correctBtn.classList.replace('bg-slate-800/80', 'bg-emerald-900/40');
-							correctBtn.classList.replace('border-slate-700', 'border-emerald-500');
-							
-							u.queue.push(u.currentQuestion); 
-							expBox.querySelector('div').className = "p-5 bg-red-950/30 border-l-4 border-red-500";
-							expTitle.className = "font-bold text-red-400 text-lg";
-							expTitle.innerText = "Kurang Tepat! (Soal akan diulang)";
-							expIcon.innerText = "🔄";
-						}
+                if (selectedIndex === q.jawabanBenar) {
+                    playSound('correct'); // 👉 TARUH DI SINI (Suara Tiiing! Benar)
+                    
+                    u.correctAnswers = (u.correctAnswers || 0) + 1;
+                    btnElement.classList.replace('bg-slate-800/80', 'bg-emerald-900/40');
+                    btnElement.classList.replace('border-slate-700', 'border-emerald-500');
+                    
+                    expBox.querySelector('div').className = "p-5 bg-emerald-950/30 border-l-4 border-emerald-500";
+                    expTitle.className = "font-bold text-emerald-400 text-lg";
+                    expTitle.innerText = "Jawaban Tepat! (+ " + q.xp + " XP)";
+                    expIcon.innerText = "✨";
+                    addXP(q.xp);
+                } else {
+                    playSound('wrong'); // 👉 TARUH DI SINI (Suara Salah)
+                    
+                    btnElement.classList.replace('bg-slate-800/80', 'bg-red-900/40');
+                    btnElement.classList.replace('border-slate-700', 'border-red-500');
+                    
+                    let correctBtn = buttons[q.jawabanBenar];
+                    correctBtn.classList.remove('opacity-50');
+                    correctBtn.classList.replace('bg-slate-800/80', 'bg-emerald-900/40');
+                    correctBtn.classList.replace('border-slate-700', 'border-emerald-500');
+                    
+                    u.queue.push(u.currentQuestion); 
+                    expBox.querySelector('div').className = "p-5 bg-red-950/30 border-l-4 border-red-500";
+                    expTitle.className = "font-bold text-red-400 text-lg";
+                    expTitle.innerText = "Kurang Tepat! (Soal akan diulang)";
+                    expIcon.innerText = "🔄";
+                }
 
-						u.currentQuestion = null;
-                        if (u.level !== levelAtQuestionStart) saveEvolutionCheckpoint(u);
-                        saveDB();
-						document.getElementById('q-explanation').innerText = q.penjelasan;
-						expBox.classList.remove('hidden');
-						document.getElementById('next-card').classList.replace('hidden', 'flex');
-					}
+                u.currentQuestion = null;
+                if (u.level !== levelAtQuestionStart) saveEvolutionCheckpoint(u);
+                saveDB();
+                document.getElementById('q-explanation').innerText = q.penjelasan;
+                expBox.classList.remove('hidden');
+                document.getElementById('next-card').classList.replace('hidden', 'flex');
+            }
 
         function addXP(amount) {
             let user = usersDB[currentUser]; user.xp += amount;
@@ -946,7 +1004,7 @@
             go('game-screen'); updateUI(); renderQuestion();
         }
 
-        // --- Modal & Specialization Mode ---
+// --- Modal & Specialization Mode ---
         let specF = null;
         let specDiff = 'Acak';
         let activeSpecIndex = null;
@@ -971,6 +1029,7 @@
             }
             return s;
         }
+
         function specNew(f, d) {   
             const ids = getSpecIds(f, d);
             const s = specSt(f, d), last = s.order.length > 0 ? s.order[s.order.length - 1] : null;
@@ -978,6 +1037,7 @@
             if (s.order.length > 1 && s.order[0] === last) [s.order[0], s.order[1]] = [s.order[1], s.order[0]];
             saveDB();
         }
+
         function startSpec(i, diff) {
             closeDiff();
             specF = FIELDS[i]; specDiff = diff;
@@ -991,40 +1051,64 @@
             $('s-name').innerText = specF + (specDiff !== 'Acak' ? ` (${specDiff})` : ''); 
             go('spec-screen'); renderSpec();
         }
+
         function specBar() {
             const s = specSt(specF, specDiff), p = Math.round(s.pos / s.order.length * 100);
             $('s-pct').innerText = p + '%'; $('s-bar').style.width = p + '%';
         }
+
         function renderSpec() {
             const s = specSt(specF, specDiff), q = bankSoal[s.order[s.pos]];
             $('s-count').innerText = `Soal ${s.pos + 1} dari ${s.order.length}`; specBar();
             $('s-cat').innerText = q.kategori; $('s-diff').innerText = q.tingkat;
             $('s-diff').className = 'px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase shadow-sm ' + (q.tingkat === 'Medium' ? 'bg-amber-900/50 text-amber-400 border border-amber-500/30' : q.tingkat === 'Hard' ? 'bg-orange-900/50 text-orange-400 border border-orange-500/30' : 'bg-red-900/50 text-red-400 border border-red-500/30');
             $('s-q').innerText = q.soal;
+            
             const box = $('s-opts'); box.innerHTML = '';
             q.opsi.forEach((opt, k) => {
                 const b = document.createElement('button');
                 b.className = 'w-full text-left p-4 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 transition-all border border-slate-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/70 font-medium text-slate-200 hover:text-white hover:border-slate-500 shadow-sm active:scale-[0.99]';
                 b.innerHTML = `<span class="inline-block w-8 h-8 text-center leading-8 rounded-lg bg-slate-700 text-slate-300 mr-3 text-sm">${String.fromCharCode(65 + k)}</span> ${opt}`;
-                b.onclick = () => specAnswer(k, b); box.appendChild(b);
+                
+                // Suara klik saat tombol pilihan latihan ditekan
+                b.onclick = () => {
+                    playSound('click');
+                    specAnswer(k, b);
+                }; 
+                box.appendChild(b);
             });
+
             $('s-exp').classList.add('hidden');
-			$('s-next-card').classList.replace('flex', 'hidden');
+            $('s-next-card').classList.replace('flex', 'hidden');
             const c = $('s-card'); c.classList.remove('card-anim'); void c.offsetWidth; c.classList.add('card-anim');
         }
+
         function specAnswer(k, btn) {
             const s = specSt(specF, specDiff), q = bankSoal[s.order[s.pos]], bs = $('s-opts').children, good = k === q.jawabanBenar;
+            
+            // Efek suara benar atau salah pada Specialization Mode
+            if (good) {
+                playSound('correct');
+            } else {
+                playSound('wrong');
+            }
+
             const mark = (b, ok) => { b.classList.remove('opacity-50'); b.classList.replace('bg-slate-800/80', ok ? 'bg-emerald-900/40' : 'bg-red-900/40'); b.classList.replace('border-slate-700', ok ? 'border-emerald-500' : 'border-red-500'); };
             for (const b of bs) { b.disabled = true; b.classList.add('opacity-50'); }
             mark(btn, good); if (!good) mark(bs[q.jawabanBenar], true);
+            
             s.pos++; saveDB(); specBar();
+            
             $('s-exp').firstElementChild.className = 'p-5 border-l-4 ' + (good ? 'bg-emerald-950/30 border-emerald-500' : 'bg-red-950/30 border-red-500');
             $('s-exp-t').className = 'font-bold text-lg mb-3 ' + (good ? 'text-emerald-400' : 'text-red-400');
-            $('s-exp-t').innerText = good ? 'Jawaban Tepat!' : 'Kurang Tepat!'; $('s-exp-p').innerText = q.penjelasan;
+            $('s-exp-t').innerText = good ? 'Jawaban Tepat!' : 'Kurang Tepat!'; 
+            $('s-exp-p').innerText = q.penjelasan;
+            
             $('s-next').innerText = s.pos >= s.order.length ? 'Putaran selesai! Mulai putaran baru ➔' : 'Lanjut ke Soal Berikutnya ➔';
             $('s-exp').classList.remove('hidden');
-			$('s-next-card').classList.replace('hidden', 'flex');
+            $('s-next-card').classList.replace('hidden', 'flex');
         }
+
         function specNext() { 
             const ids = getSpecIds(specF, specDiff);
             if (specSt(specF, specDiff).pos >= ids.length) specNew(specF, specDiff); 
