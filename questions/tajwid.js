@@ -135,5 +135,107 @@ window.questionBankParts.push(...[
       "jawabanBenar": 1,
       "penjelasan": "Tujuh huruf Isti'la terkumpul dalam kalimat 'Khussha dhaghthin qizh' (خُصَّ ضَغْطٍ قِظْ). Semuanya dibaca tebal/tafkhim pada kondisi apapun."
     }
+  }, 
+  {
+    "index": 171,
+    "question": {
+      "kategori": "Tajwid",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Apabila ada Nun Sukun (نْ) atau Tanwin bertemu dengan salah satu huruf Halq, maka cara membacanya harus jelas. Hukum bacaan ini disebut...",
+      "opsi": [
+        "Ikhfa Haqiqi",
+        "Idzhar Halqi",
+        "Idgham Bighunnah",
+        "Iqlab"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Idzhar Halqi adalah hukum bacaan yang mengharuskan Nun Sukun atau Tanwin dibaca jelas tanpa dengung ketika bertemu dengan huruf-huruf tenggorokan (Halq)."
+    }
+  },
+  {
+    "index": 172,
+    "question": {
+      "kategori": "Tajwid",
+      "tingkat": "Easy",
+      "xp": 50,
+      "soal": "Apabila ada Nun Sukun (نْ) atau Tanwin bertemu dengan huruf Ba (ب), maka bunyi Nun/Tanwin tersebut diubah menjadi bunyi Mim disertai dengung. Hukum ini dinamakan...",
+      "opsi": [
+        "Ikhfa Syafawi",
+        "Idgham Bilaghunnah",
+        "Iqlab",
+        "Idzhar Syafawi"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Iqlab secara bahasa berarti menukar/mengganti. Dalam tajwid, Iqlab berarti menukar bunyi Nun Sukun atau Tanwin menjadi bunyi Mim (م) ketika bertemu huruf Ba (ب)."
+    }
+  },
+  {
+    "index": 173,
+    "question": {
+      "kategori": "Tajwid",
+      "tingkat": "Easy",
+      "xp": 50,
+      "soal": "Huruf Idgham Bighunnah (dengan dengung) terdiri dari 4 huruf yang terkumpul dalam kata...",
+      "opsi": [
+        "يَرْمَلُوْنَ (Yarmaluna)",
+        "يَنْمُوْ (Yanmu)",
+        "قُطْبُ جَدٍّ (Quthbu Jaddin)",
+        "خُصَّ ضَغْطٍ قِظْ (Khushsha Dhaghtin Qizh)"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Idgham Bighunnah memiliki 4 huruf yaitu Ya, Nun, Mim, Wawu (يَنْمُوْ). Sedangkan Lam dan Ra adalah huruf Idgham Bilaghunnah."
+    }
+  },
+  {
+    "index": 174,
+    "question": {
+      "kategori": "Tajwid",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Secara umum, Nun Sukun bertemu Wawu dibaca Idgham Bighunnah. Namun, jika keduanya bertemu DALAM SATU KATA (seperti: قِنْوَانٌ, صِنْوَانٌ, بُنْيَانٌ, دُنْيَا), maka harus dibaca jelas. Pengecualian ini disebut hukum...",
+      "opsi": [
+        "Idzhar Syafawi",
+        "Idzhar Halqi",
+        "Idzhar Mutlaq",
+        "Ikhfa Haqiqi"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Idzhar Mutlaq (atau Idzhar Wajib) berlaku apabila Nun Sukun dan huruf Wawu/Ya bertemu dalam satu kata. Di dalam Al-Qur'an hanya ada pada 4 kata: Dunya, Bunyan, Qinwan, dan Shinwan."
+    }
+  },
+  {
+    "index": 175,
+    "question": {
+      "kategori": "Tajwid",
+      "tingkat": "Easy",
+      "xp": 50,
+      "soal": "Apabila ada Mim Sukun (مْ) bertemu dengan huruf Mim (م), maka cara membacanya didengungkan. Hukum bacaan ini disebut...",
+      "opsi": [
+        "Idgham Mimi",
+        "Ikhfa Syafawi",
+        "Idzhar Syafawi",
+        "Idgham Mutaqaribain"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Idgham Mimi (atau Idgham Mutamatsilain) terjadi saat Mim Sukun bertemu huruf Mim. Huruf pertama dilebur ke huruf kedua disertai dengung."
+    }
+  },
+  {
+    "index": 176,
+    "question": {
+      "kategori": "Tajwid",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Hukum bacaan di mana Mim Sukun (مْ) bertemu dengan semua huruf Hijaiah KECUALI huruf Mim (م) dan Ba (ب) disebut...",
+      "opsi": [
+        "Ikhfa Syafawi",
+        "Idzhar Halqi",
+        "Idzhar Syafawi",
+        "Idgham Bilaghunnah"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Idzhar Syafawi mengharuskan Mim Sukun dibaca jelas (tanpa dengung) ketika bertemu huruf selain Mim dan Ba. (Syafawi = bibir, karena makhraj Mim ada di bibir)."
+    }
   }
 ]);
