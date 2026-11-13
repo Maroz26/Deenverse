@@ -502,6 +502,15 @@
                 gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
                 osc.start(now);
                 osc.stop(now + 0.08);
+            }
+            else if (type === 'next') {
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(520, now);
+                osc.frequency.exponentialRampToValueAtTime(780, now + 0.12);
+                gainNode.gain.setValueAtTime(0.12, now);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
+                osc.start(now);
+                osc.stop(now + 0.18);
             } 
             else if (type === 'correct') {
                 // Suara "Tiiing!" gembira bernada tinggi untuk jawaban benar
@@ -569,6 +578,7 @@
             return {
                 level: 1,
                 xp: 0,
+                answeredQuestions: [],
                 queue: Array.from({ length: bankSoal.length }, (_, i) => i),
                 highestKnownLength: bankSoal.length,
                 currentQuestion: null
@@ -732,12 +742,55 @@
                         u.evolutionCheckpoint.queue.push(i);
                     }
                 }
-                u.highestKnownLength = bankSoal.length; saveDB();
+                u.highestKnownLength = bankSoal.length;
+            }
+            ensureAnsweredQuestions(u);
+            saveDB();
+        }
+
+        function ensureAnsweredQuestions(user) {
+            if (!Array.isArray(user.answeredQuestions)) {
+                const pending = new Set(user.queue);
+                if (Number.isInteger(user.currentQuestion)) pending.add(user.currentQuestion);
+                const knownLength = Number.isInteger(user.highestKnownLength)
+                    ? Math.max(0, Math.min(user.highestKnownLength, bankSoal.length))
+                    : bankSoal.length;
+                user.answeredQuestions = Array.from({ length: knownLength }, (_, index) => index)
+                    .filter(index => !pending.has(index));
+            }
+
+            const answered = new Set(user.answeredQuestions);
+            user.queue = user.queue.filter(index => !answered.has(index));
+            if (answered.has(user.currentQuestion)) user.currentQuestion = null;
+
+            if (user.evolutionCheckpoint) {
+                user.evolutionCheckpoint.queue = user.evolutionCheckpoint.queue
+                    .filter(index => !answered.has(index));
+                if (answered.has(user.evolutionCheckpoint.currentQuestion)) {
+                    user.evolutionCheckpoint.currentQuestion = null;
+                }
             }
         }
 
+        function markQuestionAnswered(user, questionIndex) {
+            ensureAnsweredQuestions(user);
+            if (!user.answeredQuestions.includes(questionIndex)) {
+                user.answeredQuestions.push(questionIndex);
+            }
+            ensureAnsweredQuestions(user);
+        }
+
         // --- GAMEPLAY ---
-        function getXPRequirement(level) { return level * 300; }
+        const XP_PER_LEVEL = 300;
+        const XP_CAP_LEVEL = 9;
+        function getXPRequirement(level) { return Math.min(level, XP_CAP_LEVEL) * XP_PER_LEVEL; }
+        function getTotalXP(user) {
+            const completedLevels = Math.max(0, user.level - 1);
+            const levelsBeforeCap = Math.min(completedLevels, XP_CAP_LEVEL);
+            const xpBeforeCap = XP_PER_LEVEL * levelsBeforeCap * (levelsBeforeCap + 1) / 2;
+            const cappedLevels = Math.max(0, completedLevels - XP_CAP_LEVEL);
+            return xpBeforeCap + cappedLevels * getXPRequirement(XP_CAP_LEVEL) + user.xp;
+        }
         const totalPossibleXP = bankSoal.reduce((total, question) => total + question.xp, 0);
 
         function saveEvolutionCheckpoint(user) {
@@ -758,6 +811,7 @@
 
         function renderQuestion() {
             let u = usersDB[currentUser];
+            ensureAnsweredQuestions(u);
 
             if (u.currentQuestion === null) {
                 if (u.queue.length === 0) {
@@ -830,6 +884,7 @@ function checkAnswer(selectedIndex, btnElement) {
                     playSound('correct'); // 👉 TARUH DI SINI (Suara Tiiing! Benar)
                     
                     u.correctAnswers = (u.correctAnswers || 0) + 1;
+                    markQuestionAnswered(u, u.currentQuestion);
                     btnElement.classList.replace('bg-slate-800/80', 'bg-emerald-900/40');
                     btnElement.classList.replace('border-slate-700', 'border-emerald-500');
                     
@@ -866,8 +921,13 @@ function checkAnswer(selectedIndex, btnElement) {
 
         function addXP(amount) {
             let user = usersDB[currentUser]; user.xp += amount;
-            let requiredXP = getXPRequirement(user.level);
-            if (user.xp >= requiredXP) { user.xp -= requiredXP; user.level++; triggerLevelUp(); }
+            let leveledUp = false;
+            while (user.xp >= getXPRequirement(user.level)) {
+                user.xp -= getXPRequirement(user.level);
+                user.level++;
+                leveledUp = true;
+            }
+            if (leveledUp) triggerLevelUp();
             updateUI();
         }
 
@@ -908,6 +968,7 @@ function checkAnswer(selectedIndex, btnElement) {
 
         function returnToDashboard() {
             const user = usersDB[currentUser];
+            ensureAnsweredQuestions(user);
             const checkpoint = user.evolutionCheckpoint;
             if (checkpoint && checkpoint.level === user.level) {
                 user.xp = checkpoint.xp;
@@ -934,7 +995,10 @@ function checkAnswer(selectedIndex, btnElement) {
             const titles = ["Pencari Ilmu", "Pejuang Subuh", "Singa Podium", "Ahli Fiqih", "Mufassir Muda", "Mujtahid", "Mujaddid"];
             document.getElementById('ui-title').innerText = titles[Math.min(user.level - 1, titles.length - 1)];
         }
-        function nextQuestion() { renderQuestion(); }
+        function nextQuestion() {
+            playSound('next');
+            renderQuestion();
+        }
 
         // ===== NAVIGASI, DASHBOARD, MODE, PENGATURAN AKUN =====
         const $ = id => document.getElementById(id);
@@ -957,7 +1021,7 @@ function checkAnswer(selectedIndex, btnElement) {
         // --- Dashboard ---
         function openDashboard() {
             const u = usersDB[currentUser];
-            const totalXPVal = (150 * u.level * (u.level - 1) + u.xp);
+            const totalXPVal = getTotalXP(u);
             
             // Hitung data baru
             const solved = bankSoal.length - u.queue.length - (u.currentQuestion !== null ? 1 : 0);
@@ -999,7 +1063,9 @@ function checkAnswer(selectedIndex, btnElement) {
 
         // --- Evolution Mode ---
         function startEvolution() {
-            ensureEvolutionCheckpoint(usersDB[currentUser]);
+            const user = usersDB[currentUser];
+            ensureAnsweredQuestions(user);
+            ensureEvolutionCheckpoint(user);
             $('ui-avatar').innerText = currentUser.charAt(0).toUpperCase(); $('ui-username').innerText = currentUser;
             go('game-screen'); updateUI(); renderQuestion();
         }
@@ -1110,6 +1176,7 @@ function checkAnswer(selectedIndex, btnElement) {
         }
 
         function specNext() { 
+            playSound('next');
             const ids = getSpecIds(specF, specDiff);
             if (specSt(specF, specDiff).pos >= ids.length) specNew(specF, specDiff); 
             renderSpec(); 
