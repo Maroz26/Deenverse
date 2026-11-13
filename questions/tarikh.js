@@ -1558,5 +1558,364 @@ window.questionBankParts.push(...[
     "jawabanBenar": 0,
     "penjelasan": "Hindun binti Utbah dikaitkan dengan peristiwa mutilasi jasad Hamzah setelah Perang Uhud. Riwayat populer menyebutkan bahwa ia mengunyah hati Hamzah, meskipun rincian kisah tersebut diperselisihkan dalam kajian sejarah."
   }
-}
+}, 
+ 
+  {
+    "index": 211,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Apakah sebutan bagi para pengikut setia Nabi Isa AS yang membantu dan membela perjuangan dakwah beliau?",
+      "opsi": [
+        "Al-Muhajirun",
+        "Al-Hawariyyun",
+        "Al-Anshar",
+        "Ashabul Kahfi"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Al-Hawariyyun adalah sebutan bagi para pengikut setia Nabi Isa AS yang mendukung dakwah beliau. Istilah ini disebutkan dalam Al-Qur'an, antara lain pada QS. Ali Imran ayat 52 dan QS. Ash-Shaff ayat 14."
+    }
+  },
+  {
+    "index": 212,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Dalam tradisi komunitas Muslim Hui di Tiongkok, siapakah sahabat Nabi Muhammad ﷺ yang dikaitkan dengan kedatangan awal Islam ke Guangzhou?",
+      "opsi": [
+        "Sa'ad bin Abi Waqqash",
+        "Abu Ubaidah bin Al-Jarrah",
+        "Khalid bin Walid",
+        "Ja'far bin Abi Thalib"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Sa'ad bin Abi Waqqash dikaitkan dengan kedatangan awal Islam ke Tiongkok dalam tradisi Muslim Hui. Namun, kisah perjalanannya ke Tiongkok pada masa Nabi Muhammad ﷺ tidak memiliki bukti sejarah awal yang kuat sehingga lebih tepat dipahami sebagai tradisi atau legenda sejarah, bukan fakta yang telah terverifikasi."
+    }
+  },
+  {
+    "index": 213,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Di manakah kaum Anshar melakukan perundingan setelah wafatnya Rasulullah ﷺ, yang kemudian menjadi bagian penting dalam proses pemilihan khalifah pertama?",
+      "opsi": [
+        "Darun Nadwah",
+        "Masjid Quba",
+        "Tsaqifah Bani Sa'idah",
+        "Baitul Maqdis"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Tsaqifah Bani Sa'idah merupakan tempat berkumpulnya sejumlah sahabat dari kalangan Anshar setelah wafatnya Rasulullah ﷺ. Perundingan tersebut kemudian melibatkan kaum Muhajirin dan berujung pada dibaiatnya Abu Bakar Ash-Shiddiq sebagai khalifah."
+    }
+  },
+  {
+    "index": 214,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Apakah nama gedung pertemuan kaum Quraisy di Makkah pada masa Jahiliyah yang digunakan untuk bermusyawarah mengenai urusan penting, termasuk strategi politik dan peperangan?",
+      "opsi": [
+        "Darun Nadwah",
+        "Darul Arqam",
+        "Baitul Maqdis",
+        "Darul Hikmah"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Darun Nadwah merupakan tempat pertemuan para pemuka Quraisy untuk membahas berbagai urusan penting, termasuk peperangan, perdamaian, dan persoalan masyarakat. Bangunan ini didirikan oleh Qushay bin Kilab di Makkah."
+    }
+  },
+  {
+    "index": 215,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Perang apakah yang pernah disaksikan dan diikuti Nabi Muhammad ﷺ ketika masih muda, sebelum beliau diangkat menjadi Rasul, yang melibatkan kelompok Quraisy dan Qais 'Aylan?",
+      "opsi": [
+        "Perang Bu'ats",
+        "Perang Fijar",
+        "Perang Badar",
+        "Perang Dhi Qar"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Perang Fijar merupakan rangkaian konflik antarkabilah Arab pada masa Jahiliyah yang melibatkan Quraisy dan sekutunya dari Bani Kinanah melawan Qais 'Aylan. Nabi Muhammad ﷺ diketahui pernah hadir membantu paman-pamannya dengan menyiapkan anak panah."
+    }
+  },
+  {
+    "index": 216,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Apakah nama dokumen kesepakatan yang disusun pada masa Rasulullah ﷺ untuk mengatur hubungan sosial, keamanan, dan kehidupan bersama antara kaum Muslimin dengan kelompok-kelompok lain, termasuk kaum Yahudi di Madinah?",
+      "opsi": [
+        "Sulhul Hudaibiyah",
+        "Baiat Aqabah",
+        "Sahifah Al-Madinah",
+        "Fathu Makkah"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Sahifah Al-Madinah atau Piagam Madinah merupakan dokumen kesepakatan yang mengatur hubungan dan tanggung jawab berbagai kelompok masyarakat di Madinah, termasuk kaum Muslimin dan kelompok-kelompok Yahudi."
+    }
+  },
+  {
+    "index": 217,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Easy",
+      "xp": 50,
+      "soal": "Siapakah sahabat Rasulullah ﷺ yang mengusulkan strategi penggalian parit dalam Perang Khandaq untuk melindungi Kota Madinah dari serangan pasukan sekutu?",
+      "opsi": [
+        "Abu Dzar Al-Ghifari",
+        "Salman Al-Farisi",
+        "Miqdad bin Amr",
+        "Ammar bin Yasir"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Salman Al-Farisi mengusulkan strategi menggali parit berdasarkan pengalaman peperangan di Persia. Strategi tersebut kemudian diterapkan oleh kaum Muslimin untuk mempertahankan Madinah dalam Perang Khandaq atau Ahzab."
+    }
+  },
+  {
+    "index": 218,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Dalam kesusastraan Arab klasik, apakah yang dimaksud dengan Al-Mu'allaqat?",
+      "opsi": [
+        "Kumpulan qasidah terkenal dari masa Jahiliyah yang secara tradisional dikaitkan dengan syair-syair yang digantungkan di Ka'bah",
+        "Kumpulan hadis yang ditulis oleh para sahabat dan digantungkan di Masjid Nabawi",
+        "Perjanjian perdagangan antarkabilah Arab yang ditulis di atas kulit",
+        "Kumpulan khutbah para pemuka Quraisy yang dibacakan setiap musim haji"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Al-Mu'allaqat merupakan kumpulan qasidah Arab terkenal dari masa Jahiliyah, yang dikaitkan dengan sejumlah penyair besar seperti Imru' al-Qais dan Zuhair bin Abi Sulma. Kisah bahwa syair-syair tersebut benar-benar ditulis dengan tinta emas lalu digantungkan di dinding Ka'bah merupakan tradisi yang diperdebatkan dan tidak dapat dipastikan secara historis."
+    }
+  },
+  {
+    "index": 219,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Siapakah sahabat Rasulullah ﷺ yang memperoleh julukan Aminul Ummah (Kepercayaan Umat) karena kejujuran dan sifat amanahnya?",
+      "opsi": [
+        "Hudzaifah bin Al-Yaman",
+        "Abu Ubaidah bin Al-Jarrah",
+        "Utsman bin Affan",
+        "Abdurrahman bin Auf"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Abu Ubaidah bin Al-Jarrah dikenal dengan julukan Aminul Ummah. Rasulullah ﷺ bersabda bahwa setiap umat memiliki orang yang paling dipercaya dan orang yang paling dipercaya dari umat ini adalah Abu Ubaidah bin Al-Jarrah. Adapun sahabat yang menerima kembali amanah kunci Ka'bah setelah Fathu Makkah adalah Utsman bin Thalhah."
+    }
+  },
+  {
+    "index": 220,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Dalam istilah sejarah Islam, apakah sebutan bagi ekspedisi militer yang diikuti secara langsung oleh Rasulullah ﷺ, baik berakhir dengan pertempuran maupun tanpa pertempuran?",
+      "opsi": [
+        "Sariyah",
+        "Ghazwah",
+        "Futuhat",
+        "Riddah"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Ghazwah adalah ekspedisi militer yang diikuti secara langsung oleh Rasulullah ﷺ. Istilah ini tidak selalu berarti terjadi pertempuran fisik karena beberapa ghazwah berakhir tanpa kontak senjata."
+    }
+  },
+  {
+    "index": 221,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Dalam istilah sejarah Islam, apakah sebutan bagi ekspedisi militer yang dikirim oleh Rasulullah ﷺ tanpa beliau ikut serta secara langsung?",
+      "opsi": [
+        "Ghazwah",
+        "Futuhat",
+        "Sariyah",
+        "Hijrah"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Sariyah adalah ekspedisi militer yang diperintahkan Rasulullah ﷺ, tetapi beliau tidak ikut serta secara langsung. Biasanya, beliau menunjuk seorang sahabat sebagai pemimpin pasukan."
+    }
+  },
+  {
+    "index": 222,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Menurut perhitungan Ibnu Ishaq yang dikutip dalam kitab Sirah Ibnu Hisyam, berapakah jumlah ghazwah yang dipimpin langsung oleh Rasulullah ﷺ?",
+      "opsi": [
+        "19 ghazwah",
+        "23 ghazwah",
+        "27 ghazwah",
+        "35 ghazwah"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Menurut perhitungan Ibnu Ishaq sebagaimana dikutip Ibnu Hisyam, Rasulullah ﷺ memimpin 27 ghazwah. Jumlah ini merupakan salah satu perhitungan yang terkenal dalam literatur sirah, meskipun terdapat perbedaan penghitungan dalam sumber sejarah lainnya."
+    }
+  },
+  {
+    "index": 223,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Menurut perhitungan Al-Waqidi dalam kitab Al-Maghazi, berapakah jumlah ekspedisi sariyah yang dikirim oleh Rasulullah ﷺ?",
+      "opsi": [
+        "27 sariyah",
+        "38 sariyah",
+        "47 sariyah",
+        "56 sariyah"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Al-Waqidi mencatat jumlah sariyah sebanyak 47 ekspedisi. Perlu diketahui bahwa jumlahnya berbeda dalam sumber lain; Ibnu Hisyam mencatat 38 sariyah berdasarkan riwayat Ibnu Ishaq. Karena itu, angka dalam soal ini secara khusus mengikuti perhitungan Al-Waqidi."
+    }
+  },
+  {
+    "index": 224,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Berapakah jumlah pasukan Muslimin dan jumlah kaum Muslimin yang gugur sebagai syahid dalam Perang Badar Kubra menurut angka yang umum dikenal dalam literatur sirah?",
+      "opsi": [
+        "313 pasukan dan 14 orang gugur",
+        "313 pasukan dan 70 orang gugur",
+        "1.000 pasukan dan 14 orang gugur",
+        "1.000 pasukan dan 70 orang gugur"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Jumlah pasukan Muslimin dalam Perang Badar Kubra umumnya disebut sekitar 313 orang, sedangkan jumlah kaum Muslimin yang gugur sebagai syahid adalah 14 orang, terdiri dari 6 kaum Muhajirin dan 8 kaum Anshar. Beberapa riwayat mencatat jumlah pasukan dengan angka yang sedikit berbeda."
+    }
+  },
+  {
+    "index": 225,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Berapa perkiraan jumlah pasukan Quraisy yang menghadapi kaum Muslimin dalam Perang Badar Kubra, dan berapa jumlah mereka yang terbunuh?",
+      "opsi": [
+        "Sekitar 700 pasukan dan 50 orang terbunuh",
+        "Sekitar 1.000 pasukan dan 70 orang terbunuh",
+        "Sekitar 1.000 pasukan dan 100 orang terbunuh",
+        "Sekitar 1.300 pasukan dan 14 orang terbunuh"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Pasukan Quraisy dalam Perang Badar Kubra umumnya diperkirakan berjumlah sekitar 1.000 orang. Sekitar 70 orang dari pihak Quraisy terbunuh dan 70 lainnya ditawan oleh kaum Muslimin."
+    }
+  },
+  {
+    "index": 226,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Menurut riwayat Sa'id bin Al-Musayyab dalam Al-Muwatta' karya Imam Malik, berapa lama Rasulullah ﷺ menghadap Baitul Maqdis setelah tiba di Madinah sebelum arah kiblat dialihkan ke Ka'bah?",
+      "opsi": [
+        "12 bulan",
+        "14 bulan",
+        "16 bulan",
+        "18 bulan"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Riwayat dalam Al-Muwatta' menyebutkan bahwa Rasulullah ﷺ menghadap Baitul Maqdis selama 16 bulan setelah tiba di Madinah, sebelum kiblat dialihkan ke Ka'bah. Terdapat pula riwayat lain yang menyebutkan 17 bulan, sehingga angka dalam soal ini secara khusus mengikuti riwayat Sa'id bin Al-Musayyab."
+    }
+  },
+  {
+    "index": 227,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Easy",
+      "xp": 50,
+      "soal": "Apa latar belakang utama kaum Quraisy mempersiapkan serangan terhadap kaum Muslimin dalam Perang Uhud?",
+      "opsi": [
+        "Membalas kekalahan dan kerugian yang mereka alami dalam Perang Badar",
+        "Membalas penghancuran benteng mereka di Khaibar",
+        "Menanggapi pelanggaran perjanjian Hudaibiyah oleh kaum Muslimin",
+        "Menghentikan ekspedisi pasukan Muslimin menuju Tabuk"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Perang Uhud terjadi pada tahun 3 Hijriah. Salah satu latar belakang utamanya adalah keinginan kaum Quraisy membalas kekalahan besar dan kehilangan banyak tokoh penting dalam Perang Badar pada tahun sebelumnya."
+    }
+  },
+  {
+    "index": 228,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Apakah yang dimaksud dengan istilah 'Aamul Wufud dalam sejarah dakwah Rasulullah ﷺ?",
+      "opsi": [
+        "Tahun ketika kaum Muslimin pertama kali berhijrah ke Habasyah",
+        "Tahun ketika berbagai delegasi kabilah Arab berdatangan ke Madinah untuk menemui Rasulullah ﷺ",
+        "Tahun ketika kaum Quraisy melakukan pemboikotan terhadap Bani Hasyim",
+        "Tahun ketika seluruh pasukan Muslimin melakukan ekspedisi ke Syam"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "'Aamul Wufud berarti Tahun Delegasi. Istilah ini merujuk pada periode ketika banyak utusan dari berbagai kabilah Arab berdatangan ke Madinah untuk menemui Rasulullah ﷺ, mempelajari Islam, menyatakan keislaman, atau menjalin hubungan dengan kaum Muslimin. Tahun 9 Hijriah dikenal luas sebagai Tahun Delegasi."
+    }
+  },
+  {
+    "index": 229,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Perjanjian apakah yang mengatur gencatan senjata selama sepuluh tahun antara kaum Muslimin dan Quraisy, sekaligus memuat ketentuan penundaan umrah kaum Muslimin hingga tahun berikutnya?",
+      "opsi": [
+        "Baiat Aqabah",
+        "Piagam Madinah",
+        "Sulhul Hudaibiyah",
+        "Perjanjian Thaif"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Sulhul Hudaibiyah merupakan perjanjian damai antara Rasulullah ﷺ dan kaum Quraisy pada tahun 6 Hijriah. Di antara ketentuannya adalah gencatan senjata selama sepuluh tahun, kaum Muslimin menunda pelaksanaan umrah hingga tahun berikutnya, serta ketentuan pengembalian orang Quraisy yang datang ke Madinah tanpa izin walinya."
+    }
+  },
+  {
+    "index": 230,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah tokoh Quraisy yang meletakkan isi perut unta di punggung Rasulullah ﷺ ketika beliau sedang bersujud di dekat Ka'bah pada masa dakwah di Makkah?",
+      "opsi": [
+        "Abu Lahab",
+        "Abu Jahal",
+        "Uqbah bin Abi Mu'ayth",
+        "Umayyah bin Khalaf"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Uqbah bin Abi Mu'ayth meletakkan isi perut unta di punggung Rasulullah ﷺ ketika beliau sedang bersujud. Putri beliau, Fatimah, kemudian datang membersihkan kotoran tersebut. Peristiwa ini diriwayatkan dalam Sahih Al-Bukhari dari Abdullah bin Mas'ud."
+    }
+  },
+  {
+    "index": 231,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Super Hard",
+      "xp": 200,
+      "soal": "Siapakah dua orang yang disebut dalam sejumlah riwayat sirah sebagai suami Khadijah binti Khuwailid sebelum beliau menikah dengan Rasulullah ﷺ?",
+      "opsi": [
+        "'Atiq bin 'A'id dan Abu Halah At-Tamimi",
+        "Waraqah bin Naufal dan Abu Thalib",
+        "Abu Sufyan bin Harb dan Abu Lahab",
+        "Harits bin Abi Syamir dan Naufal bin Mu'awiyah"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Sejumlah riwayat sirah menyebutkan bahwa Khadijah pernah menikah dengan 'Atiq bin 'A'id dan Abu Halah At-Tamimi sebelum menikah dengan Rasulullah ﷺ. Namun, urutan pernikahan, sebagian nama, dan detail keturunan dari pernikahan terdahulu berbeda dalam sejumlah sumber sejarah. Karena itu, kedua nama tersebut lebih tepat dipahami sebagai nama yang disebut dalam riwayat, bukan rincian yang disepakati secara mutlak."
+    }
+  }
+
 ]);

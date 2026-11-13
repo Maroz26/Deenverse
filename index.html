@@ -579,7 +579,8 @@
                 level: 1,
                 xp: 0,
                 answeredQuestions: [],
-                queue: Array.from({ length: bankSoal.length }, (_, i) => i),
+                queue: shuffle(Array.from({ length: bankSoal.length }, (_, i) => i)),
+                evolutionQueueShuffled: true,
                 highestKnownLength: bankSoal.length,
                 currentQuestion: null
             };
@@ -742,9 +743,16 @@
                         u.evolutionCheckpoint.queue.push(i);
                     }
                 }
+                if (u.evolutionQueueShuffled) {
+                    u.queue = shuffle(u.queue);
+                    if (u.evolutionCheckpoint && u.evolutionCheckpoint.level === u.level) {
+                        u.evolutionCheckpoint.queue = shuffle(u.evolutionCheckpoint.queue);
+                    }
+                }
                 u.highestKnownLength = bankSoal.length;
             }
             ensureAnsweredQuestions(u);
+            ensureEvolutionQueueShuffled(u);
             saveDB();
         }
 
@@ -778,6 +786,15 @@
                 user.answeredQuestions.push(questionIndex);
             }
             ensureAnsweredQuestions(user);
+        }
+
+        function ensureEvolutionQueueShuffled(user) {
+            if (user.evolutionQueueShuffled) return;
+            user.queue = shuffle(user.queue);
+            if (user.evolutionCheckpoint) {
+                user.evolutionCheckpoint.queue = shuffle(user.evolutionCheckpoint.queue);
+            }
+            user.evolutionQueueShuffled = true;
         }
 
         // --- GAMEPLAY ---
@@ -1065,6 +1082,7 @@ function checkAnswer(selectedIndex, btnElement) {
         function startEvolution() {
             const user = usersDB[currentUser];
             ensureAnsweredQuestions(user);
+            ensureEvolutionQueueShuffled(user);
             ensureEvolutionCheckpoint(user);
             $('ui-avatar').innerText = currentUser.charAt(0).toUpperCase(); $('ui-username').innerText = currentUser;
             go('game-screen'); updateUI(); renderQuestion();
