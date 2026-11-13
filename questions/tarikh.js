@@ -864,7 +864,7 @@ window.questionBankParts.push(...[
       "kategori": "Tarikh",
       "tingkat": "Hard",
       "xp": 150,
-      "soal": "Jika menggunakan versi riwayat yang menyebut Khadijah berusia 28 tahun ketika menikah, serta menghitung usia saat akad nikah, berapa jumlah dari 11 istri Rasulullah ﷺ yang dinikahi ketika berusia tidak lebih dari 30 tahun?",
+      "soal": "Berapa jumlah dari 11 istri Rasulullah ﷺ yang dinikahi ketika mereka berusia tidak lebih dari 30 tahun?",
       "opsi": [
         "7 orang",
         "3 orang",
@@ -872,7 +872,7 @@ window.questionBankParts.push(...[
         "5 orang"
       ],
       "jawabanBenar": 0,
-      "penjelasan": "Berdasarkan versi usia yang digunakan dalam soal ini, terdapat tujuh orang, yaitu Khadijah binti Khuwailid (28 tahun), Aisyah binti Abu Bakar, Hafshah binti Umar, Zainab binti Khuzaimah (29 tahun), Juwairiyyah binti Al-Harits, Shafiyyah binti Huyay (17 tahun), dan Maimunah binti Al-Harits (25 tahun). Perlu diperhatikan bahwa terdapat perbedaan riwayat mengenai usia beberapa istri Rasulullah ﷺ, terutama Khadijah. Jika menggunakan riwayat usia Khadijah 40 tahun, jumlahnya menjadi enam orang."
+      "penjelasan": "Berdasarkan versi usia yang digunakan dalam soal ini, terdapat tujuh orang, yaitu Aisyah binti Abu Bakar (6/9 tahun), Hafshah binti Umar(19-21 tahun), Zainab binti Khuzaimah (29 tahun), Juwairiyyah binti Al-Harits(20 tahun), Shafiyyah binti Huyay (17 tahun), Ummu Salamah (Hindu binti Abu Umayyah) di rentang umur 27-29 tahun, dan Maimunah binti Al-Harits (26/27 tahun)."
     }
   },
   {
@@ -917,7 +917,7 @@ window.questionBankParts.push(...[
       "kategori": "Tarikh",
       "tingkat": "Hard",
       "xp": 150,
-      "soal": "Menurut riwayat sirah yang menyebutkan usia pernikahannya 17 tahun, berapakah usia Shafiyyah binti Huyay ketika dinikahi Rasulullah ﷺ?",
+      "soal": "Menurut salah satu riwayat sirah, di umur berapakah usia Shafiyyah binti Huyay ketika dinikahi Rasulullah ﷺ?",
       "opsi": [
         "23 tahun",
         "30 tahun",
