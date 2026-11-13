@@ -103,7 +103,7 @@
             <div class="inline-flex items-center justify-center w-24 h-24 rounded-3xl bg-gradient-to-br from-slate-800 to-slate-900 border-4 border-emerald-500 shadow-[0_0_30px_rgba(16,185,129,0.5)] mb-4 rotate-3 hover:rotate-0 transition-transform cursor-pointer">
                 <span class="text-5xl">🕋</span>
             </div>
-            <h1 class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-400 drop-shadow-lg leading-none tracking-tight">ARENA<br><span class="text-emerald-400 text-5xl">ILMU</span></h1>
+            <h1 class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-400 drop-shadow-lg leading-none tracking-tight">DEEN<br><span class="text-emerald-400 text-5xl">VERSE</span></h1>
             <p class="text-emerald-500 font-bold tracking-[0.2em] text-xs mt-3 uppercase">Cerdas Cermat Islam</p>
         </div>
 
@@ -883,7 +883,7 @@
         // --- Pengaturan akun ---
         const ICO = { user: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z', lock: 'M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z' };
         const fieldHtml = (id, type, ph, ico) => `<label class="fld"><span class="ib"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${ICO[ico]}"></path></svg></span><input type="${type}" id="${id}" aria-label="${ph}" placeholder="${ph}" class="inp"></label>`;
-        $('set-fields').innerHTML = fieldHtml('set-user', 'text', 'Username', 'user') + fieldHtml('set-cur', 'password', 'Password saat ini (wajib untuk menyimpan)', 'lock') + fieldHtml('set-new', 'password', 'Password baru (kosongkan jika tidak diganti)', 'lock') + fieldHtml('set-conf', 'password', 'Ulangi password baru', 'lock');
+        $('set-fields').innerHTML = fieldHtml('set-user', 'text', 'Username', 'user') + fieldHtml('set-cur', 'password', 'Password saat ini', 'lock') + fieldHtml('set-new', 'password', 'Password barud', 'lock') + fieldHtml('set-conf', 'password', 'Ulangi password baru', 'lock');
 
         function openSettings() {
             $('set-user').value = currentUser; ['set-cur', 'set-new', 'set-conf'].forEach(id => $(id).value = '');
@@ -942,6 +942,29 @@
 				localStorage.removeItem('ccDB_session');
 			}
 		})();
+    </script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/13.3.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.3.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCU_Gf_GmP4oCXsW1o5uTiG45lg0gomVtk",
+            authDomain: "rusyaidan-islamic-scholarship.firebaseapp.com",
+            projectId: "rusyaidan-islamic-scholarship",
+            storageBucket: "rusyaidan-islamic-scholarship.firebasestorage.app",
+            messagingSenderId: "997188443486",
+            appId: "1:997188443486:web:1d91aa436d24af4446c3cf",
+            measurementId: "G-ZFMMTW648K"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
     </script>
 </body>
 </html>

@@ -242,8 +242,8 @@ window.questionBankParts.push(...[
     "index": 71,
     "question": {
       "kategori": "Tarikh",
-      "tingkat": "Hard",
-      "xp": 150,
+      "tingkat": "Medium",
+      "xp": 100,
       "soal": "Pada masa Khalifah Abu Bakar Ash-Shiddiq, muncul sejumlah kelompok Arab yang masih mengakui salat tetapi menolak menyerahkan zakat kepada pemerintahan Madinah. Sikap Abu Bakar terhadap persoalan tersebut menjadi dasar dimulainya Perang Riddah. Apa prinsip utama yang mendasari keputusan beliau?",
       "opsi": [
         "Kewajiban zakat hanya berlaku selama Rasulullah ﷺ masih hidup",
@@ -696,5 +696,867 @@ window.questionBankParts.push(...[
       "jawabanBenar": 0,
       "penjelasan": "Ashab al-Aikah merupakan kaum yang dikaitkan dengan tempat berupa pepohonan lebat yang disebut Al-Aikah. Dalam penjelasan sejarah Islam, mereka dikenal sebagai kaum yang menyembah pohon tersebut dan melakukan kecurangan dalam takaran serta timbangan."
     }
+  },  {
+    "index": 115,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Apa nama kerajaan Islam pertama yang berdiri di Pulau Jawa?",
+      "opsi": [
+        "Kesultanan Cirebon",
+        "Kesultanan Banten",
+        "Kesultanan Demak",
+        "Kesultanan Mataram Islam",
+        "Kesultanan Pajang"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Kesultanan Demak dikenal sebagai kesultanan Islam pertama di Pulau Jawa. Kerajaan ini didirikan oleh Raden Patah dan menjadi pusat penting penyebaran Islam di Jawa pada akhir abad ke-15."
+    }
+  },
+  {
+    "index": 116,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah nama wali yang dikenal sebagai penyebar agama Islam di wilayah Jawa Barat dan mendirikan Kesultanan Cirebon?",
+      "opsi": [
+        "Sunan Kalijaga",
+        "Sunan Gunung Jati",
+        "Sunan Kudus",
+        "Sunan Bonang",
+        "Sunan Giri"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Sunan Gunung Jati, yang memiliki nama Syarif Hidayatullah, merupakan salah satu Wali Songo yang berperan besar dalam penyebaran Islam di Jawa Barat, khususnya di wilayah Cirebon dan Banten."
+    }
+  },
+  {
+    "index": 117,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Secara bahasa (etimologi), apakah arti kata salat?",
+      "opsi": [
+        "Ibadah",
+        "Doa",
+        "Berserah diri",
+        "Tunduk",
+        "Penyucian diri"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Secara bahasa, salat (الصلاة) berarti doa. Adapun secara istilah syariat, salat merupakan rangkaian perkataan dan perbuatan khusus yang diawali dengan takbiratul ihram dan diakhiri dengan salam."
+    }
+  },
+  {
+    "index": 118,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Nabi siapakah yang dikenal dengan gelar Khaṭīb al-Anbiyā’ (خَطِيبُ الْأَنْبِيَاءِ), yang berarti ahli pidato atau juru bicara para nabi?",
+      "opsi": [
+        "Nabi Ilyas AS",
+        "Nabi Syu'aib AS",
+        "Nabi Idris AS",
+        "Nabi Hud AS",
+        "Nabi Shalih AS"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Nabi Syu'aib AS dikenal dalam sejumlah literatur tafsir dan sejarah Islam dengan gelar Khaṭīb al-Anbiyā’ karena kefasihan, kemampuan berdialog, serta kepiawaiannya menyampaikan hujah kepada kaumnya. Gelar yang tepat adalah Khaṭīb (خطيب), bukan Kaatib (كاتب)."
+    }
+  },
+  {
+    "index": 119,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Kaum yang mendustakan dakwah Nabi Syu'aib AS mendapatkan azab yang disebut dalam Al-Qur'an sebagai عَذَابُ يَوْمِ الظُّلَّةِ (Azab Yaum az-Zullah). Apakah bentuk azab tersebut?",
+      "opsi": [
+        "Angin topan yang menghancurkan seluruh permukiman",
+        "Banjir besar yang menenggelamkan seluruh kaum",
+        "Azab berupa naungan awan yang disusul sambaran api dan azab dahsyat",
+        "Pasukan burung yang melempari mereka dengan batu",
+        "Hujan batu dari langit selama tujuh hari"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Dalam QS. Asy-Syu'ara ayat 189, disebutkan bahwa kaum yang mendustakan Nabi Syu'aib ditimpa Azab Yaum az-Zullah. Menurut penjelasan sejumlah kitab tafsir, mereka mengalami panas yang sangat dahsyat, kemudian berlindung di bawah awan yang ternyata menjadi tempat turunnya azab berupa sambaran api. Oleh karena itu, jawaban angin kencang bukanlah jawaban yang tepat untuk istilah ini."
+    }
+  },
+  {
+    "index": 120,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah istri pertama Rasulullah ﷺ yang dinikahi ketika beliau berusia 25 tahun?",
+      "opsi": [
+        "Saudah binti Zam'ah",
+        "Aisyah binti Abu Bakar",
+        "Khadijah binti Khuwailid",
+        "Hafshah binti Umar",
+        "Ummu Salamah binti Abu Umayyah"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Khadijah binti Khuwailid merupakan istri pertama Rasulullah ﷺ. Pernikahan tersebut berlangsung ketika Rasulullah berusia 25 tahun. Beliau tidak menikahi wanita lain selama Khadijah masih hidup."
+    }
+  },
+  {
+    "index": 121,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Siapakah istri Rasulullah ﷺ yang nama aslinya adalah Barrah, sebelum kemudian namanya diganti oleh Rasulullah ﷺ?",
+      "opsi": [
+        "Shafiyyah binti Huyay",
+        "Juwairiyyah binti Al-Harits",
+        "Maimunah binti Al-Harits",
+        "Zainab binti Jahsy",
+        "Ummu Habibah binti Abu Sufyan"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Juwairiyyah binti Al-Harits memiliki nama asli Barrah. Rasulullah ﷺ kemudian mengganti namanya menjadi Juwairiyyah. Hal ini disebutkan dalam hadis riwayat Shahih Muslim nomor 2140."
+    }
+  },
+  {
+    "index": 122,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah istri Rasulullah ﷺ yang berasal dari keluarga pemuka Yahudi Bani Nadhir dan merupakan putri Huyay bin Akhtab?",
+      "opsi": [
+        "Juwairiyyah binti Al-Harits",
+        "Hafshah binti Umar",
+        "Shafiyyah binti Huyay",
+        "Ummu Habibah binti Abu Sufyan",
+        "Zainab binti Khuzaimah"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Shafiyyah binti Huyay merupakan putri Huyay bin Akhtab, salah seorang pemuka Yahudi dari Bani Nadhir. Setelah Perang Khaibar, beliau kemudian menjadi salah satu istri Rasulullah ﷺ."
+    }
+  },
+  {
+    "index": 123,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah istri Rasulullah ﷺ yang merupakan putri dari Umar bin Khattab RA?",
+      "opsi": [
+        "Aisyah binti Abu Bakar",
+        "Maimunah binti Al-Harits",
+        "Ummu Hakim binti Al-Harits",
+        "Hafshah binti Umar",
+        "Zainab binti Jahsy"
+      ],
+      "jawabanBenar": 3,
+      "penjelasan": "Hafshah binti Umar merupakan putri Umar bin Khattab RA. Sebelum menikah dengan Rasulullah ﷺ, Hafshah merupakan istri Khunais bin Hudzafah yang wafat setelah mengikuti Perang Badar."
+    }
+  },
+  {
+    "index": 124,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Jika menggunakan versi riwayat yang menyebut Khadijah berusia 28 tahun ketika menikah, serta menghitung usia saat akad nikah, berapa jumlah dari 11 istri Rasulullah ﷺ yang dinikahi ketika berusia tidak lebih dari 30 tahun?",
+      "opsi": [
+        "7 orang",
+        "3 orang",
+        "10 orang",
+        "5 orang"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Berdasarkan versi usia yang digunakan dalam soal ini, terdapat tujuh orang, yaitu Khadijah binti Khuwailid (28 tahun), Aisyah binti Abu Bakar, Hafshah binti Umar, Zainab binti Khuzaimah (29 tahun), Juwairiyyah binti Al-Harits, Shafiyyah binti Huyay (17 tahun), dan Maimunah binti Al-Harits (25 tahun). Perlu diperhatikan bahwa terdapat perbedaan riwayat mengenai usia beberapa istri Rasulullah ﷺ, terutama Khadijah. Jika menggunakan riwayat usia Khadijah 40 tahun, jumlahnya menjadi enam orang."
+    }
+  },
+  {
+    "index": 125,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Siapakah istri Rasulullah ﷺ yang garis keturunannya dinisbatkan hingga Nabi Harun AS, saudara Nabi Musa AS?",
+      "opsi": [
+        "Juwairiyyah binti Al-Harits",
+        "Shafiyyah binti Huyay",
+        "Hafshah binti Umar",
+        "Maimunah binti Al-Harits",
+        "Ummu Salamah binti Abu Umayyah"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Shafiyyah binti Huyay memiliki garis keturunan yang dinisbatkan hingga Nabi Harun AS, saudara Nabi Musa AS. Beliau berasal dari keluarga pemuka Yahudi dan menjadi salah satu istri Rasulullah ﷺ setelah Perang Khaibar."
+    }
+  },
+  {
+    "index": 126,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah istri Rasulullah ﷺ yang merupakan putri Al-Harits bin Abi Dhirar, seorang pemimpin Bani Musthaliq?",
+      "opsi": [
+        "Shafiyyah binti Huyay",
+        "Zainab binti Jahsy",
+        "Juwairiyyah binti Al-Harits",
+        "Hafshah binti Umar",
+        "Saudah binti Zam'ah"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Juwairiyyah binti Al-Harits merupakan putri Al-Harits bin Abi Dhirar, pemimpin Bani Musthaliq. Pernikahan beliau dengan Rasulullah ﷺ juga membawa dampak besar karena kaum Muslimin membebaskan banyak tawanan Bani Musthaliq setelah beliau menjadi bagian dari keluarga Rasulullah ﷺ."
+    }
+  },
+  {
+    "index": 127,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Menurut riwayat sirah yang menyebutkan usia pernikahannya 17 tahun, berapakah usia Shafiyyah binti Huyay ketika dinikahi Rasulullah ﷺ?",
+      "opsi": [
+        "23 tahun",
+        "30 tahun",
+        "17 tahun",
+        "45 tahun"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Menurut riwayat yang dicantumkan dalam literatur sirah, Shafiyyah binti Huyay berusia sekitar 17 tahun ketika dinikahi Rasulullah ﷺ setelah Perang Khaibar pada tahun ketujuh Hijriah."
+    }
+  },
+  {
+    "index": 128,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Very Hard",
+      "xp": 200,
+      "soal": "Menurut salah satu riwayat sirah, siapakah istri Rasulullah ﷺ yang dinikahi ketika berusia sekitar 20 tahun?",
+      "opsi": [
+        "Ummu Salamah binti Abu Umayyah",
+        "Juwairiyyah binti Al-Harits",
+        "Aisyah binti Abu Bakar",
+        "Ramlah binti Abu Sufyan"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Juwairiyyah binti Al-Harits disebut berusia sekitar 20 tahun ketika dinikahi Rasulullah ﷺ. Beliau merupakan putri pemimpin Bani Musthaliq dan sebelumnya bernama Barrah sebelum namanya diganti oleh Rasulullah ﷺ."
+    }
+  }, {
+  "index": 129,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Siapakah nama ibu susu Nabi Muhammad ﷺ?",
+    "opsi": [
+      "Tsuwaibah Al-Aslamiyah",
+      "Halimah As-Sa'diyah",
+      "Aminah binti Wahb",
+      "Ummu Aiman"
+    ],
+    "jawabanBenar": 1,
+    "penjelasan": "Halimah As-Sa'diyah merupakan perempuan dari Bani Sa'ad yang menyusui Nabi Muhammad ﷺ ketika beliau masih bayi."
   }
+},
+{
+  "index": 130,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Kapan Nabi Muhammad ﷺ dilahirkan menurut pendapat yang masyhur?",
+    "opsi": [
+      "12 Rabiulawal Tahun Gajah",
+      "10 Muharram Tahun Gajah",
+      "17 Ramadan Tahun Gajah",
+      "27 Rajab Tahun Gajah"
+    ],
+    "jawabanBenar": 0,
+    "penjelasan": "Nabi Muhammad ﷺ dilahirkan pada Tahun Gajah. Tanggal 12 Rabiulawal merupakan pendapat yang masyhur dalam banyak literatur sirah, meskipun terdapat perbedaan pendapat mengenai tanggal tepatnya."
+  }
+},
+{
+  "index": 131,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Di manakah Nabi Muhammad ﷺ menerima wahyu pertama?",
+    "opsi": [
+      "Gua Tsur",
+      "Gua Hira",
+      "Jabal Uhud",
+      "Jabal Rahmah"
+    ],
+    "jawabanBenar": 1,
+    "penjelasan": "Wahyu pertama berupa lima ayat awal Surah Al-Alaq diterima Nabi Muhammad ﷺ ketika beliau sedang beribadah di Gua Hira."
+  }
+},
+{
+  "index": 132,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Di gua apakah Nabi Muhammad ﷺ bersembunyi bersama Abu Bakar Ash-Shiddiq ketika hijrah menuju Madinah?",
+    "opsi": [
+      "Gua Hira",
+      "Gua Uhud",
+      "Gua Tsur",
+      "Gua Quba"
+    ],
+    "jawabanBenar": 2,
+    "penjelasan": "Nabi Muhammad ﷺ dan Abu Bakar Ash-Shiddiq bersembunyi di Gua Tsur selama tiga malam untuk menghindari pengejaran kaum Quraisy sebelum melanjutkan perjalanan menuju Madinah."
+  }
+},
+{
+  "index": 133,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Easy",
+    "xp": 50,
+    "soal": "Siapakah orang pertama yang masuk Islam dari kalangan wanita?",
+    "opsi": [
+      "Aisyah binti Abu Bakar",
+      "Fatimah binti Muhammad",
+      "Khadijah binti Khuwailid",
+      "Ummu Salamah"
+    ],
+    "jawabanBenar": 2,
+    "penjelasan": "Khadijah binti Khuwailid merupakan orang pertama yang beriman kepada kerasulan Nabi Muhammad ﷺ dan menerima Islam."
+  }
+},
+{
+  "index": 134,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Easy",
+    "xp": 50,
+    "soal": "Siapakah orang pertama yang masuk Islam dari kalangan laki-laki dewasa?",
+    "opsi": [
+      "Umar bin Khattab",
+      "Abu Bakar Ash-Shiddiq",
+      "Utsman bin Affan",
+      "Ali bin Abi Thalib"
+    ],
+    "jawabanBenar": 1,
+    "penjelasan": "Abu Bakar Ash-Shiddiq merupakan laki-laki dewasa merdeka pertama yang masuk Islam. Beliau kemudian berperan besar dalam mengajak sejumlah sahabat untuk memeluk Islam."
+  }
+},
+{
+  "index": 135,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Easy",
+    "xp": 50,
+    "soal": "Siapakah orang pertama yang masuk Islam dari kalangan anak-anak?",
+    "opsi": [
+      "Abdullah bin Abbas",
+      "Zaid bin Haritsah",
+      "Hasan bin Ali",
+      "Ali bin Abi Thalib"
+    ],
+    "jawabanBenar": 3,
+    "penjelasan": "Ali bin Abi Thalib merupakan anak laki-laki pertama yang masuk Islam. Ketika itu, beliau masih berusia sangat muda dan tinggal bersama Nabi Muhammad ﷺ."
+  }
+},
+{
+  "index": 136,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Hard",
+    "xp": 150,
+    "soal": "Pada tahun berapakah peristiwa hijrah Nabi Muhammad ﷺ dari Makkah ke Madinah terjadi menurut kalender Masehi?",
+    "opsi": [
+      "610 M",
+      "615 M",
+      "622 M",
+      "630 M"
+    ],
+    "jawabanBenar": 2,
+    "penjelasan": "Peristiwa hijrah Nabi Muhammad ﷺ dari Makkah ke Madinah berlangsung pada tahun 622 Masehi. Peristiwa ini menjadi titik awal penanggalan kalender Hijriah."
+  }
+},
+{
+  "index": 137,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Apa nama masjid pertama yang dibangun oleh Nabi Muhammad ﷺ ketika tiba di kawasan Madinah?",
+    "opsi": [
+      "Masjid Nabawi",
+      "Masjid Quba",
+      "Masjid Qiblatain",
+      "Masjidil Haram"
+    ],
+    "jawabanBenar": 1,
+    "penjelasan": "Masjid Quba dibangun oleh Nabi Muhammad ﷺ ketika beliau singgah di kawasan Quba dalam perjalanan hijrah menuju Madinah. Masjid ini dikenal sebagai masjid pertama yang dibangun dalam sejarah Islam."
+  }
+},
+{
+  "index": 138,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Kapan Nabi Muhammad ﷺ wafat menurut tanggal yang masyhur dalam literatur sejarah Islam?",
+    "opsi": [
+      "12 Rabiulawal tahun 10 Hijriah",
+      "12 Rabiulawal tahun 11 Hijriah",
+      "10 Muharram tahun 11 Hijriah",
+      "17 Ramadan tahun 11 Hijriah"
+    ],
+    "jawabanBenar": 1,
+    "penjelasan": "Nabi Muhammad ﷺ wafat pada tahun 11 Hijriah. Tanggal 12 Rabiulawal merupakan salah satu pendapat yang masyhur, meskipun terdapat perbedaan pendapat mengenai tanggal wafat beliau."
+  }
+},
+{
+  "index": 139,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Hard",
+    "xp": 150,
+    "soal": "Siapakah nama dua putra Nabi Muhammad ﷺ yang lahir dari Khadijah radhiyallahu 'anha?",
+    "opsi": [
+      "Ibrahim dan Qasim",
+      "Qasim dan Abdullah",
+      "Abdullah dan Ibrahim",
+      "Hasan dan Husain"
+    ],
+    "jawabanBenar": 1,
+    "penjelasan": "Qasim dan Abdullah merupakan dua putra Nabi Muhammad ﷺ dari Khadijah radhiyallahu 'anha. Keduanya wafat ketika masih kecil."
+  }
+},
+{
+  "index": 140,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Easy",
+    "xp": 50,
+    "soal": "Siapakah nama dua cucu Nabi Muhammad ﷺ dari pasangan Ali bin Abi Thalib dan Fatimah az-Zahra?",
+    "opsi": [
+      "Qasim dan Abdullah",
+      "Zaid dan Usamah",
+      "Hasan dan Husain",
+      "Abdullah dan Ja'far"
+    ],
+    "jawabanBenar": 2,
+    "penjelasan": "Hasan dan Husain merupakan dua cucu Nabi Muhammad ﷺ dari putri beliau, Fatimah az-Zahra, dan Ali bin Abi Thalib."
+  }
+},
+{
+  "index": 141,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Hard",
+    "xp": 150,
+    "soal": "Pasar manakah yang dikenal sebagai salah satu pasar terkenal bangsa Arab pada masa Jahiliah dan menjadi tempat berlangsungnya kegiatan perdagangan serta perlombaan syair?",
+    "opsi": [
+      "Pasar Dzul Majaz",
+      "Pasar Ukaz",
+      "Pasar Majannah",
+      "Pasar Qainuqa'"
+    ],
+    "jawabanBenar": 1,
+    "penjelasan": "Pasar Ukaz merupakan salah satu pasar besar bangsa Arab pada masa Jahiliah. Selain menjadi pusat perdagangan, tempat ini juga dikenal sebagai lokasi perlombaan syair dan pertemuan antarkabilah."
+  }
+},
+{
+  "index": 142,
+  "question": {
+    "kategori": "Fiqih",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Bagaimana cara makmum laki-laki mengingatkan imam yang melakukan kesalahan ketika salat?",
+    "opsi": [
+      "Mengucapkan Alhamdulillah",
+      "Mengucapkan Subhanallah",
+      "Mengucapkan Astaghfirullah",
+      "Mengucapkan Allahu Akbar"
+    ],
+    "jawabanBenar": 1,
+    "penjelasan": "Makmum laki-laki disyariatkan mengucapkan Subhanallah untuk mengingatkan imam ketika terjadi kesalahan dalam salat. Adapun perempuan dapat mengingatkan dengan menepukkan telapak tangan."
+  }
+},
+{
+  "index": 143,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Hard",
+    "xp": 150,
+    "soal": "Menurut salah satu pendapat mengenai konversi kalender Masehi, tanggal berapakah Nabi Muhammad ﷺ dilahirkan?",
+    "opsi": [
+      "Ahad, 12 April 571 M",
+      "Senin, 20 Agustus 570 M",
+      "Senin, 12 September 571 M",
+      "Jumat, 20 April 571 M"
+    ],
+    "jawabanBenar": 1,
+    "penjelasan": "Tanggal 20 Agustus 570 M merupakan salah satu tanggal yang pernah diajukan dalam pembahasan konversi tanggal kelahiran Nabi Muhammad ﷺ. Namun, penetapan tanggal Masehi kelahiran beliau masih diperdebatkan dan tidak dapat dianggap sebagai kepastian sejarah."
+  }
+},
+{
+  "index": 144,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Hard",
+    "xp": 150,
+    "soal": "Siapakah penguasa Andalusia yang mendapat julukan Rajawali Quraisy (Ṣaqr Quraisy)?",
+    "opsi": [
+      "Abdurrahman III",
+      "Hisyam I",
+      "Abdurrahman ad-Dakhil",
+      "Al-Hakam II"
+    ],
+    "jawabanBenar": 2,
+    "penjelasan": "Abdurrahman ad-Dakhil merupakan pendiri Emirat Umayyah di Andalusia. Ia mendapat julukan Ṣaqr Quraisy atau Rajawali Quraisy dari Khalifah Abbasiyah Abu Ja'far al-Manshur karena keberhasilannya membangun kekuasaan Umayyah di Andalusia."
+  }
+},
+{
+  "index": 145,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Siapakah panglima perang termuda yang diangkat Rasulullah ﷺ untuk memimpin pasukan ekspedisi militer menjelang wafat beliau?",
+    "opsi": [
+      "Abdullah bin Zubair",
+      "Usamah bin Zaid",
+      "Mu'adz bin Jabal",
+      "Zaid bin Haritsah"
+    ],
+    "jawabanBenar": 1,
+    "penjelasan": "Usamah bin Zaid diangkat Rasulullah ﷺ untuk memimpin pasukan menuju wilayah Syam. Pengangkatannya menunjukkan kepercayaan besar Rasulullah ﷺ terhadap kemampuan beliau meskipun usianya masih muda."
+  }
+},
+{
+  "index": 146,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Very Hard",
+    "xp": 200,
+    "soal": "Siapakah tiga tokoh yang dikenal berperan penting dalam pendirian dan konsolidasi awal Dinasti Abbasiyah?",
+    "opsi": [
+      "Abul Abbas as-Saffah, Abu Ja'far al-Manshur, dan Abu Muslim al-Khurasani",
+      "Harun ar-Rasyid, Al-Ma'mun, dan Al-Mu'tashim",
+      "Al-Mahdi, Al-Hadi, dan Harun ar-Rasyid",
+      "Abu Ja'far al-Manshur, Al-Ma'mun, dan Al-Mu'tashim"
+    ],
+    "jawabanBenar": 0,
+    "penjelasan": "Abul Abbas as-Saffah merupakan khalifah pertama Dinasti Abbasiyah, Abu Ja'far al-Manshur berperan besar dalam memperkuat fondasi pemerintahannya, sedangkan Abu Muslim al-Khurasani merupakan tokoh penting dalam gerakan revolusi Abbasiyah yang menggulingkan Dinasti Umayyah."
+  }
+},
+{
+  "index": 147,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Hard",
+    "xp": 150,
+    "soal": "Di kota manakah ibu kota pemerintahan Dinasti Bani Umayyah yang berpusat di wilayah Syam?",
+    "opsi": [
+      "Baghdad",
+      "Kairo",
+      "Kufah",
+      "Damaskus"
+    ],
+    "jawabanBenar": 3,
+    "penjelasan": "Damaskus merupakan ibu kota Kekhalifahan Umayyah yang didirikan oleh Muawiyah bin Abu Sufyan. Kota ini menjadi pusat pemerintahan Dinasti Umayyah selama hampir satu abad."
+  }
+},
+{
+  "index": 148,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Apakah nama perang yang terjadi antara pasukan Khalifah Ali bin Abi Thalib dan kelompok yang dipimpin Aisyah binti Abu Bakar radhiyallahu 'anha?",
+    "opsi": [
+      "Perang Shiffin",
+      "Perang Nahrawan",
+      "Perang Jamal",
+      "Perang Yarmuk"
+    ],
+    "jawabanBenar": 2,
+    "penjelasan": "Perang Jamal merupakan konflik yang terjadi pada tahun 36 Hijriah antara pasukan Khalifah Ali bin Abi Thalib dan kelompok yang dipimpin Aisyah radhiyallahu 'anha. Peristiwa ini terjadi di sekitar Basrah."
+  }
+},
+{
+  "index": 149,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Menurut sejumlah riwayat sejarah Islam, nabi siapakah yang dikaitkan dengan pembangunan kembali Masjid Al-Aqsha?",
+    "opsi": [
+      "Nabi Ibrahim AS",
+      "Nabi Ismail AS",
+      "Nabi Sulaiman AS",
+      "Nabi Ya'qub AS"
+    ],
+    "jawabanBenar": 2,
+    "penjelasan": "Nabi Sulaiman AS dikenal dalam sejumlah riwayat sebagai nabi yang membangun atau merenovasi Baitul Maqdis. Namun, riwayat mengenai pembangunan awal Masjid Al-Aqsha dan keterlibatan para nabi sebelumnya memiliki beberapa penafsiran."
+  }
+}, {
+  "index": 150,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Hard",
+    "xp": 150,
+    "soal": "Dalam sejumlah literatur tafsir dan kisah-kisah Islam, apakah nama anjing yang disebut mengikuti para pemuda Ashabul Kahfi?",
+    "opsi": [
+      "Qithmir",
+      "Raqim",
+      "Sijjin",
+      "Hanzhalah"
+    ],
+    "jawabanBenar": 0,
+    "penjelasan": "Anjing yang dikisahkan mengikuti para pemuda Ashabul Kahfi dikenal dengan nama Qithmir atau Kitmir dalam sejumlah literatur tafsir dan kisah. Namun, nama tersebut tidak disebutkan secara eksplisit dalam Al-Qur'an maupun hadis sahih."
+  }
+}, {
+  "index": 151,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 150,
+    "soal": "Setibanya di Madinah dalam peristiwa hijrah, Rasulullah ﷺ melakukan sejumlah langkah penting untuk membangun fondasi masyarakat Islam. Manakah urutan tiga langkah tersebut yang tepat?",
+    "opsi": [
+      "Membangun Masjid Nabawi, mempersaudarakan kaum Muhajirin dan Anshar, serta membuat perjanjian dengan kaum Yahudi",
+      "Mempersaudarakan kaum Muhajirin dan Anshar, menaklukkan Makkah, serta membangun Masjid Nabawi",
+      "Membuat perjanjian dengan kaum Yahudi, membangun Masjid Quba, serta memulai ekspedisi militer ke Syam",
+      "Membangun Masjid Nabawi, mengangkat Abu Bakar sebagai khalifah, serta mempersatukan seluruh kabilah Arab"
+    ],
+    "jawabanBenar": 0,
+    "penjelasan": "Di Madinah, Rasulullah ﷺ membangun Masjid Nabawi sebagai pusat ibadah dan aktivitas masyarakat, mempersaudarakan kaum Muhajirin dan Anshar, serta menyusun Piagam Madinah yang mengatur hubungan antara berbagai kelompok masyarakat, termasuk kaum Yahudi."
+  }
+}, {
+  "index": 152,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Hard",
+    "xp": 150,
+    "soal": "Siapakah sahabat Nabi Muhammad ﷺ yang mendapat gelar \"Duta Islam Pertama\"?",
+    "opsi": ["Mush'ab bin Umair", "Ja'far bin Abi Thalib", "Abdullah bin Rawahah", "Zaid bin Haritsah"],
+    "jawabanBenar": 0,
+    "penjelasan": "Mush'ab bin Umair diutus Rasulullah ﷺ ke Madinah untuk mengajarkan Islam kepada penduduknya sebelum peristiwa hijrah."
+  }
+},
+{
+  "index": 153,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Easy",
+    "xp": 50,
+    "soal": "Siapakah sahabat Nabi Muhammad ﷺ yang mendapat gelar \"Pedang Allah yang Terhunus\"?",
+    "opsi": ["Sa'ad bin Abi Waqqash", "Khalid bin Walid", "Amr bin Ash", "Abu Ubaidah bin Jarrah"],
+    "jawabanBenar": 1,
+    "penjelasan": "Khalid bin Walid mendapat gelar Saifullah al-Maslul, yang berarti Pedang Allah yang Terhunus."
+  }
+},
+{
+  "index": 154,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Hard",
+    "xp": 150,
+    "soal": "Siapakah sahabat Nabi Muhammad ﷺ yang mendapat julukan \"Orang yang Dimandikan Malaikat\"?",
+    "opsi": ["Hanzhalah bin Amir", "Abdullah bin Jahsy", "Mush'ab bin Umair", "Amr bin Jamuh"],
+    "jawabanBenar": 0,
+    "penjelasan": "Hanzhalah bin Amir gugur dalam Perang Uhud. Dalam riwayat disebutkan bahwa jenazahnya dimandikan oleh para malaikat."
+  }
+},
+{
+  "index": 155,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Hard",
+    "xp": 150,
+    "soal": "Siapakah sahabat Nabi Muhammad ﷺ yang menjadi sebab turunnya teguran dalam Surah 'Abasa karena kedatangannya ketika Rasulullah sedang berdakwah kepada para pembesar Quraisy?",
+    "opsi": ["Abdullah bin Abbas", "Abdullah bin Mas'ud", "Abdullah bin Ummi Maktum", "Abu Hurairah"],
+    "jawabanBenar": 2,
+    "penjelasan": "Abdullah bin Ummi Maktum adalah sahabat tunanetra yang datang meminta pengajaran kepada Rasulullah ﷺ. Peristiwa tersebut menjadi latar turunnya ayat-ayat awal Surah 'Abasa."
+  }
+},
+{
+  "index": 156,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Siapakah wanita Muslimah pertama yang gugur sebagai syahidah dalam sejarah Islam?",
+    "opsi": ["Khadijah binti Khuwailid", "Sumayyah binti Khayyat", "Nusaibah binti Ka'ab", "Asma binti Abu Bakar"],
+    "jawabanBenar": 1,
+    "penjelasan": "Sumayyah binti Khayyat, ibu Ammar bin Yasir, wafat setelah disiksa oleh kaum Quraisy dan dikenal sebagai syahidah pertama dalam Islam."
+  }
+},
+{
+  "index": 157,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Kelompok apakah yang tetap mendukung dan setia kepada Khalifah Ali bin Abi Thalib setelah peristiwa Tahkim dalam konflik dengan Mu'awiyah?",
+    "opsi": ["Khawarij", "Syi'ah Ali", "Murji'ah", "Qadariyah"],
+    "jawabanBenar": 1,
+    "penjelasan": "Syi'ah Ali merupakan kelompok pendukung Ali bin Abi Thalib. Sementara itu, Khawarij muncul dari kalangan pendukung Ali yang menolak keputusan Tahkim."
+  }
+},
+{
+  "index": 158,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Apakah motif utama kaum Quraisy melancarkan Perang Uhud terhadap kaum Muslimin?",
+    "opsi": ["Menguasai jalur perdagangan Yaman", "Membalas kekalahan mereka dalam Perang Badar", "Menghentikan penyebaran Islam di Habasyah", "Merebut kembali wilayah Madinah"],
+    "jawabanBenar": 1,
+    "penjelasan": "Kaum Quraisy ingin membalas kekalahan besar mereka dalam Perang Badar yang terjadi setahun sebelumnya."
+  }
+},
+{
+  "index": 159,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Masjid apakah yang pertama kali dibangun oleh Rasulullah ﷺ setelah hijrah menuju Madinah?",
+    "opsi": ["Masjid Nabawi", "Masjidil Haram", "Masjid Quba", "Masjid Qiblatain"],
+    "jawabanBenar": 2,
+    "penjelasan": "Masjid Quba dibangun ketika Rasulullah ﷺ singgah di Quba dalam perjalanan hijrah menuju Madinah."
+  }
+},
+{
+  "index": 160,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Siapakah budak asal Habasyah yang membunuh Hamzah bin Abdul Muthalib dalam Perang Uhud?",
+    "opsi": ["Bilal bin Rabah", "Wahsyi bin Harb", "Shuhaib ar-Rumi", "Salim maula Abu Hudzaifah"],
+    "jawabanBenar": 1,
+    "penjelasan": "Wahsyi bin Harb membunuh Hamzah dalam Perang Uhud menggunakan tombaknya. Ia kemudian masuk Islam."
+  }
+},
+{
+  "index": 161,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Siapakah yang membunuh Khalifah Umar bin Khattab?",
+    "opsi": ["Abu Lu'lu'ah al-Majusi", "Abdullah bin Saba", "Amr bin Bakr", "Hurmuzan"],
+    "jawabanBenar": 0,
+    "penjelasan": "Umar bin Khattab ditikam oleh Abu Lu'lu'ah, yang dikenal pula dengan nama Fairuz, ketika sedang memimpin salat Subuh."
+  }
+},
+{
+  "index": 162,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Nabi siapakah yang diutus Allah SWT kepada kaum Tsamud?",
+    "opsi": ["Nabi Hud AS", "Nabi Syuaib AS", "Nabi Shalih AS", "Nabi Luth AS"],
+    "jawabanBenar": 2,
+    "penjelasan": "Nabi Shalih AS diutus kepada kaum Tsamud untuk mengajak mereka menyembah Allah SWT dan meninggalkan penyembahan berhala."
+  }
+},
+{
+  "index": 163,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Very Hard",
+    "xp": 200,
+    "soal": "Siapakah pendiri Daulah Aghlabiyah yang berkuasa di wilayah Ifriqiyah?",
+    "opsi": ["Ibrahim bin Aghlab", "Ziyadatullah I", "Abdurrahman ad-Dakhil", "Ubaidillah al-Mahdi"],
+    "jawabanBenar": 0,
+    "penjelasan": "Ibrahim bin Aghlab mendirikan Daulah Aghlabiyah pada tahun 800 M dengan pusat pemerintahan di Ifriqiyah."
+  }
+},
+{
+  "index": 164,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Very Hard",
+    "xp": 200,
+    "soal": "Siapakah tokoh yang dikenal sebagai pendiri Dinasti Fatimiyah?",
+    "opsi": ["Al-Mu'izz li Dinillah", "Ubaidillah al-Mahdi", "Al-Aziz Billah", "Al-Hakim bi Amrillah"],
+    "jawabanBenar": 1,
+    "penjelasan": "Ubaidillah al-Mahdi mendirikan Dinasti Fatimiyah pada tahun 909 M di wilayah Ifriqiyah."
+  }
+},
+{
+  "index": 165,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Very Hard",
+    "xp": 200,
+    "soal": "Siapakah tokoh yang mendirikan gerakan Hizbut Tahrir pada tahun 1953?",
+    "opsi": ["Hasan al-Banna", "Sayyid Qutb", "Taqiyuddin an-Nabhani", "Abul A'la al-Maududi"],
+    "jawabanBenar": 2,
+    "penjelasan": "Taqiyuddin an-Nabhani mendirikan Hizbut Tahrir di Yerusalem pada tahun 1953."
+  }
+},
+{
+  "index": 166,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Very Hard",
+    "xp": 200,
+    "soal": "Siapakah pendiri gerakan Ikhwanul Muslimin di Mesir pada tahun 1928?",
+    "opsi": ["Hasan al-Banna", "Sayyid Qutb", "Muhammad Abduh", "Rasyid Ridha"],
+    "jawabanBenar": 0,
+    "penjelasan": "Hasan al-Banna mendirikan Ikhwanul Muslimin di kota Ismailiyah, Mesir, pada tahun 1928."
+  }
+},
+{
+  "index": 167,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Siapakah tokoh utama pendiri organisasi Nahdlatul Ulama (NU) pada tahun 1926?",
+    "opsi": ["KH. Ahmad Dahlan", "KH. Hasyim Asy'ari", "KH. Wahab Hasbullah", "KH. Bisri Syansuri"],
+    "jawabanBenar": 1,
+    "penjelasan": "KH. Hasyim Asy'ari merupakan tokoh utama pendiri NU dan menjadi Rais Akbar pertama organisasi tersebut. KH. Wahab Hasbullah juga berperan penting dalam pendiriannya."
+  }
+},
+{
+  "index": 168,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Medium",
+    "xp": 100,
+    "soal": "Siapakah pendiri organisasi Muhammadiyah yang didirikan di Yogyakarta pada tahun 1912?",
+    "opsi": ["KH. Hasyim Asy'ari", "KH. Ahmad Dahlan", "KH. Wahab Hasbullah", "Ki Bagus Hadikusumo"],
+    "jawabanBenar": 1,
+    "penjelasan": "KH. Ahmad Dahlan mendirikan Muhammadiyah di Yogyakarta pada tanggal 18 November 1912."
+  }
+},
+{
+  "index": 169,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Very Hard",
+    "xp": 200,
+    "soal": "Siapakah pendiri Tarekat Tijaniyah?",
+    "opsi": ["Abdul Qadir al-Jilani", "Ahmad bin Muhammad bin Mukhtar at-Tijani", "Abu al-Hasan asy-Syadzili", "Jalaluddin Rumi"],
+    "jawabanBenar": 1,
+    "penjelasan": "Tarekat Tijaniyah didirikan oleh Ahmad bin Muhammad bin Mukhtar at-Tijani, seorang ulama sufi asal Aljazair."
+  }
+}, {
+  "index": 170,
+  "question": {
+    "kategori": "Tarikh",
+    "tingkat": "Hard",
+    "xp": 150,
+    "soal": "Siapakah wanita yang dalam sejumlah riwayat sejarah disebut merusak jasad Hamzah bin Abdul Muthalib setelah Perang Uhud, termasuk mengunyah hatinya?",
+    "opsi": ["Hindun binti Utbah", "Ummu Hakim binti Harits", "Sahlah binti Suhail", "Safiyyah binti Abdul Muthalib"],
+    "jawabanBenar": 0,
+    "penjelasan": "Hindun binti Utbah dikaitkan dengan peristiwa mutilasi jasad Hamzah setelah Perang Uhud. Riwayat populer menyebutkan bahwa ia mengunyah hati Hamzah, meskipun rincian kisah tersebut diperselisihkan dalam kajian sejarah."
+  }
+}
 ]);
