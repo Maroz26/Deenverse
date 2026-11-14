@@ -1139,5 +1139,22 @@ window.questionBankParts.push(...[
       "jawabanBenar": 1,
       "penjelasan": "Secara umum, zakat dibagi menjadi dua kategori utama, yaitu zakat fitrah dan zakat mal. Zakat fitrah diwajibkan berkaitan dengan berakhirnya bulan Ramadan, sedangkan zakat mal dikenakan atas harta yang memenuhi ketentuan nisab dan persyaratan zakat lainnya."
     }
+  },
+  {
+    "index": 306,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Dalam sebuah hadis sahih yang diriwayatkan dari Abdullah bin Sarjis رَضِيَ ٱللَّٰهُ عَنْهُ, Rasulullah ﷺ melarang umat Islam untuk kencing di dalam apa?",
+      "opsi": [
+        "Sungai yang mengalir tenang",
+        "Lubang yang ada di tanah",
+        "Bawah pohon yang rindang",
+        "Tanah lapang yang gersang"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Rasulullah ﷺ melarang seseorang kencing di dalam lubang (di tanah). Para ulama dan ahli hadis menjelaskan bahwa lubang-lubang di tanah sering kali menjadi tempat tinggal atau sarang hewan (seperti ular atau serangga) serta tempat bermukimnya makhluk lain (seperti jin) (Tetapi hadits ini dinilai dha'if oleh banyak ulama), sehingga dikhawatirkan dapat membahayakan diri sendiri atau menyakiti sesama makhluk."
+    }
   }
 ]);
