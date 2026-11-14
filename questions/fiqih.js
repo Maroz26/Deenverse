@@ -775,8 +775,8 @@ window.questionBankParts.push(...[
       "xp": 150,
       "soal": "Dalam ushul fikih mazhab Syafi'i, bagaimana kedudukan Al-Maslahah Al-Mursalah (kemaslahatan yang tidak didukung atau ditolak secara spesifik oleh nash) sebagai dalil hukum mandiri?",
       "opsi": [
-        "Diterima secara mutlak tanpa syarat apa pun",
-        "Ditolak secara mutlak karena dikhawatirkan mengikuti hawa nafsu",
+        "Diterima karena dapat mencakup cakupan hukum yang tidak secara langsung dicakup oleh nash",
+        "Ditolak karena dikhawatirkan mengikuti hawa nafsu",
         "Diterima dengan syarat dan batasan tertentu",
         "Diposisikan di atas qiyas jali dalam urutan sumber hukum"
       ],

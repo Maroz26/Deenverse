@@ -1471,7 +1471,7 @@ window.questionBankParts.push(...[
     "tingkat": "Very Hard",
     "xp": 200,
     "soal": "Siapakah pendiri Daulah Aghlabiyah yang berkuasa di wilayah Ifriqiyah?",
-    "opsi": ["Ibrahim bin Aghlab", "Ziyadatullah I", "Abdurrahman ad-Dakhil", "Ubaidillah al-Mahdi"],
+    "opsi": ["Ibrahim", "Ziyadatullah I", "Abdurrahman ad-Dakhil", "Ubaidillah"],
     "jawabanBenar": 0,
     "penjelasan": "Ibrahim bin Aghlab mendirikan Daulah Aghlabiyah pada tahun 800 M dengan pusat pemerintahan di Ifriqiyah."
   }
@@ -2246,9 +2246,9 @@ window.questionBankParts.push(...[
       "kategori": "Tarikh",
       "tingkat": "Super Hard",
       "xp": 200,
-      "soal": "Menurut riwayat yang mencatat pertemuan di Daumatul Jandal, di manakah dan pada tahun berapakah kedua juru damai dalam proses tahkim pasca-Perang Shiffin bertemu?",
+      "soal": "Menurut salah satu riwayat, di manakah dan pada tahun berapakah kedua juru damai dalam proses tahkim pasca-Perang Shiffin bertemu?",
       "opsi": [
-        "Di Adzruh, tahun 36 H",
+        "Di Makkah, tahun 36 H",
         "Di Daumatul Jandal, tahun 37 H",
         "Di Shiffin, tahun 38 H",
         "Di Kufah, tahun 39 H"
