@@ -529,5 +529,243 @@ window.questionBankParts.push(...[
       "jawabanBenar": 0,
       "penjelasan": "Gharim adalah orang yang memiliki utang untuk kepentingan yang dibenarkan syariat dan mengalami kesulitan melunasinya. Mereka termasuk salah satu dari delapan golongan penerima zakat sebagaimana disebutkan dalam QS. At-Taubah ayat 60."
     }
-  }
+  }, 
+  {
+    "index": 232,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Jumlah rukun wudhu menurut Madzhab Syafi'i adalah berjumlah berapa?",
+      "opsi": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "4"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Jumlah rukun wudhu menurut Madzhab Syafi'i adalah 6, yaitu: Niat ketika membasuh muka, Membasuh muka, Membasuh kedua tangan hingga siku,  Mengusap sebagian kepala, Membasuh kedua kaki hingga mata kaki, dan Tertib."
+    }
+  },    {
+        "index": 233,
+        "question": {
+            "kategori": "Fiqih",
+            "tingkat": "Medium",
+            "xp": 100,
+            "soal": "Manakah kelompok anggota tubuh yang wajib dibasuh dalam wudhu?",
+            "opsi": [
+                "Membasuh muka, tangan sampai siku, dan kaki",
+                "Niat dan tertib",
+                "Mengusap kepala",
+                "Membasuh kedua telinga"
+            ],
+            "jawabanBenar": 0,
+            "penjelasan": "Anggota wudhu yang disepakati fardhu berdasarkan ayat Al-Maidah adalah wajah, tangan hingga siku, mengusap kepala, dan kaki hingga mata kaki. Tertib dan niat diperselisihkan oleh mazhab Hanafi."
+        }
+    },
+    {
+        "index": 234,
+        "question": {
+            "kategori": "Fiqih",
+            "tingkat": "Easy",
+            "xp": 50,
+            "soal": "Berapakah jumlah rakaat shalat sunnah mu'akkad harian (rawatib) yang dianjurkan?",
+            "opsi": [
+                "8 rakaat",
+                "10 rakaat",
+                "12 rakaat",
+                "20 rakaat"
+            ],
+            "jawabanBenar": 2,
+            "penjelasan": "Shalat sunnah mu'akkad harian berjumlah 12 rakaat: 2 rakaat sebelum Subuh, 4 rakaat sebelum Zhuhur, 2 rakaat sesudah Zhuhur, 2 rakaat sesudah Maghrib, dan 2 rakaat sesudah Isya."
+        }
+    },
+    {
+        "index": 235,
+        "question": {
+            "kategori": "Fiqih",
+            "tingkat": "Medium",
+            "xp": 100,
+            "soal": "Batas minimal nisab harta kekayaan berupa emas yang wajib dikeluarkan zakatnya adalah...",
+            "opsi": [
+                "50 gram",
+                "85 gram",
+                "93,6 gram",
+                "100 gram"
+            ],
+            "jawabanBenar": 1,
+            "penjelasan": "Berdasarkan standar jumhur ulama kontemporer (mengikuti konversi 20 dinar), nisab emas murni adalah 85 gram (setara dengan 20 mitsqal)."
+        }
+    },
+    {
+        "index": 236,
+        "question": {
+            "kategori": "Fiqih",
+            "tingkat": "Medium",
+            "xp": 100,
+            "soal": "Air yang suci pada zatnya, tetapi tidak dapat menyucikan karena berubah sifatnya akibat bercampur dengan benda suci lain disebut...",
+            "opsi": [
+                "Mutanajis",
+                "Musyammas",
+                "Tahir Ghayair Mutahhir",
+                "Mutlaq"
+            ],
+            "jawabanBenar": 2,
+            "penjelasan": "Air suci pada zatnya namun tidak bisa mensucikan (tahir ghairu mutahhir) adalah air suci yang berubah sifatnya secara mutlak oleh benda suci lain."
+        }
+    },
+    {
+        "index": 237,
+        "question": {
+            "kategori": "Fiqih",
+            "tingkat": "Hard",
+            "xp": 150,
+            "soal": "Berdasarkan ketentuan hukum Islam, berapakah masa iddah bagi wanita yang ditalak dalam keadaan hamil?",
+            "opsi": [
+                "3 kali quru' (suci)",
+                "4 bulan 10 hari",
+                "Sampai melahirkan kandungannya",
+                "3 bulan penuh"
+            ],
+            "jawabanBenar": 2,
+            "penjelasan": "Berdasarkan surat At-Talaq ayat 4, iddah bagi wanita hamil adalah sampai mereka melahirkan kandungannya, baik talak raj'i maupun ba'in."
+        }
+    },
+    {
+        "index": 238,
+        "question": {
+            "kategori": "Fiqih",
+            "tingkat": "Medium",
+            "xp": 100,
+            "soal": "Menurut mazhab Maliki, bagian kepala yang wajib diusap ketika berwudhu adalah...",
+            "opsi": [
+                "Mengusap seluruh kepala secara menyeluruh",
+                "Membasuh kepala dengan air mengalir",
+                "Menyapu bagian dahi dan kedua telinga saja",
+                "Menyapu kepala sebanyak tiga kali basuhan"
+            ],
+            "jawabanBenar": 0,
+            "penjelasan": "Mazhab Maliki mewajibkan mas’ah ra’si kullihi (mengusap seluruh kepala) berdasarkan pemahaman huruf ba' dalam ayat wudhu yang bermakna ilshaq (menyeluruh)."
+        }
+    },
+    {
+        "index": 239,
+        "question": {
+            "kategori": "Fiqih",
+            "tingkat": "Medium",
+            "xp": 100,
+            "soal": "Berdasarkan ketentuan khiyar majelis, sampai kapan hak khiyar berlaku bagi penjual dan pembeli?",
+            "opsi": [
+                "Selama 3 hari 3 malam",
+                "Selama pembeli dan penjual belum berpisah fisik dari tempat akad",
+                "Sampai barang diterima oleh pembeli",
+                "Hingga pembeli menyatakan ridha secara lisan"
+            ],
+            "jawabanBenar": 1,
+            "penjelasan": "Khiyar majelis berlaku selama kedua belah pihak yang berakad masih berada di tempat akad dan belum saling berpisah fisik (ma tafrasqa)."
+        }
+    },
+    {
+        "index": 240,
+        "question": {
+            "kategori": "Fiqih",
+            "tingkat": "Medium",
+            "xp": 100,
+            "soal": "Kaidah fikih \"Al-Ashlu fil-mu'amalah al-ibahah\" mengandung makna dasar bahwa dalam bidang muamalah (kebendaan dan sosial), hukum asalnya adalah...",
+            "opsi": [
+                "Haram sampai ada dalil yang membolehkan",
+                "Mubah (boleh) kecuali ada dalil shahih yang melarangnya",
+                "Makruh sampai ada konsensus ulama",
+                "Bergantung pada niat masing-masing pihak"
+            ],
+            "jawabanBenar": 1,
+            "penjelasan": "Berbeda dengan ibadah mahdhah yang hukum asalnya haram sampai ada perintah (taufiqiyyah), muamalah berprinsip mubah selama tidak mengandung unsur dharar, riba, maysir, atau kezaliman."
+        }
+    },
+    {
+        "index": 241,
+        "question": {
+            "kategori": "Fiqih",
+            "tingkat": "Medium",
+            "xp": 100,
+            "soal": "Wanita yang mengalami darah istihadah (darah penyakit) diwajibkan untuk membersihkan kemaluannya dan menyumpalnya (istihafr). Ia wajib berwudhu setiap kali...",
+            "opsi": [
+                "Masuk waktu shalat fardhu",
+                "Hendak melakukan setiap shalat (fardhu maupun sunnah)",
+                "Setiap keluar darah baru",
+                "Setiap pergantian hari"
+            ],
+            "jawabanBenar": 0,
+            "penjelasan": "Menurut jumhur ulama, perempuan mustahadhah wajib berwudhu setiap kali masuk waktu shalat fardhu setelah membersihkan darah dan membalutnya."
+        }
+    },
+    {
+        "index": 242,
+        "question": {
+            "kategori": "Fiqih",
+            "tingkat": "Hard",
+            "xp": 150,
+            "soal": "Kaidah fikih \"Al-Yaqiinu laa yuzaalu bisy-syakk\" (Keyakinan tidak bisa dihilangkan oleh keraguan) gugur atau tidak berlaku apabila...",
+            "opsi": [
+                "Keraguan tersebut muncul berulang-ulang dalam waktu dekat",
+                "Keyakinan asal didasarkan pada asumsi kuat (zhann)",
+                "Terdapat keyakinan lain yang setara atau lebih kuat yang menentangnya",
+                "Terjadi istishab dalam hukum perdata Islam"
+            ],
+            "jawabanBenar": 2,
+            "penjelasan": "Kaidah keyakinan dikalahkan jika ada keyakinan tandingan yang setara (misalnya dua saksi saling bertentangan) atau kaidah pengecualian lain seperti al-ashlu fi al-abdh al-tahrim."
+        }
+    },
+    {
+        "index": 243,
+        "question": {
+            "kategori": "Fiqih",
+            "tingkat": "Hard",
+            "xp": 150,
+            "soal": "Berdasarkan mazhab Maliki, status hukum membaca surat Al-Fatihah bagi makmum di belakang imam dalam shalat jahriyah (bacaan keras) adalah...",
+            "opsi": [
+                "Wajib secara mutlak pada setiap rakaat",
+                "Makruh mutlak karena bacaan imam sudah mewakili makmum",
+                "Wajib bagi imam saja, makmum cukup mendengarkan dan diam",
+                "Sunnah mu'akkad bagi makmum di sela-sela diamnya imam"
+            ],
+            "jawabanBenar": 1,
+            "penjelasan": "Mazhab Maliki berpendapat bahwa makmum dalam shalat jahriyah disunnahkan diam mendengarkan bacaan imam, dan bacaan imam sudah mencukupi makmum (makmum tidak wajib membaca Al-Fatihah)."
+        }
+    },
+    {
+        "index": 244,
+        "question": {
+            "kategori": "Fiqih",
+            "tingkat": "Very Hard",
+            "xp": 200,
+            "soal": "Dalam ekonomi Islam klasik, transaksi jual beli Bay' al-Wafa' (jual beli dengan syarat hak tebus) diperselisihkan oleh para ulama mazhab. Pendapat yang muktamad di kalangan mazhab Hanafi membolehkan transaksi ini karena...",
+            "opsi": [
+                "Mengandung unsur qardh (pinjaman) yang mendatangkan manfaat bagi pemberi pinjaman",
+                "Menghindari riba dengan cara menutup pintu kebangkrutan debitur melalui pemenuhan kebutuhan darurat masyarakat",
+                "Disamakan dengan akad mudharabah murni",
+                "Merupakan bentuk hibah bersyarat yang sah"
+            ],
+            "jawabanBenar": 1,
+            "penjelasan": "Mazhab Hanafi dan sebagian Hanbali membolehkan Bay' al-Wafa' sebagai bentuk solusi hukum (hilah ja'izah) untuk melindungi debitur agar tidak kehilangan tanah sepenuhnya akibat utang piutang."
+        }
+    },
+    {
+        "index": 245,
+        "question": {
+            "kategori": "Fiqih",
+            "tingkat": "Hard",
+            "xp": 150,
+            "soal": "Dalam mazhab Syafi'i, hukum menyentuh kulit wanita non-mahram secara langsung tanpa alas dan tanpa syahwat terhadap keabsahan wudhu adalah...",
+            "opsi": [
+                "Membatalkan wudhu secara mutlak",
+                "Tidak membatalkan wudhu sama sekali",
+                "Membatalkan hanya jika disengaja",
+                "Makruh tahrim namun wudhu tetap sah"
+            ],
+            "jawabanBenar": 0,
+            "penjelasan": "Berdasarkan mazhab Syafi'i (merujuk pada tafsir surat Al-Maidah ayat 6 kata lamastum), persentuhan kulit laki-laki dan perempuan dewasa non-mahram secara langsung membatalkan wudhu secara mutlak, baik dengan syahwat maupun tidak."
+        }
+    }
 ]);
