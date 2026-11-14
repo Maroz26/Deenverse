@@ -767,5 +767,259 @@ window.questionBankParts.push(...[
             "jawabanBenar": 0,
             "penjelasan": "Berdasarkan mazhab Syafi'i (merujuk pada tafsir surat Al-Maidah ayat 6 kata lamastum), persentuhan kulit laki-laki dan perempuan dewasa non-mahram secara langsung membatalkan wudhu secara mutlak, baik dengan syahwat maupun tidak."
         }
+    }, {
+    "index": 246,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Dalam ushul fikih mazhab Syafi'i, bagaimana kedudukan Al-Maslahah Al-Mursalah (kemaslahatan yang tidak didukung atau ditolak secara spesifik oleh nash) sebagai dalil hukum mandiri?",
+      "opsi": [
+        "Diterima secara mutlak tanpa syarat apa pun",
+        "Ditolak secara mutlak karena dikhawatirkan mengikuti hawa nafsu",
+        "Diterima dengan syarat dan batasan tertentu",
+        "Diposisikan di atas qiyas jali dalam urutan sumber hukum"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Imam Syafi'i dikenal sangat berhati-hati terhadap penggunaan maslahat dan istihsan sebagai dasar hukum mandiri. Maslahat tidak dapat digunakan apabila bertentangan dengan nash atau prinsip syariat. Namun, perlu dibedakan antara penerimaan maslahat sebagai pertimbangan hukum dan penerimaannya sebagai dalil mandiri."
     }
+  },
+  {
+    "index": 247,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Super Hard",
+      "xp": 200,
+      "soal": "Dalam kasus pembagian waris Gharrawain (Umariyatain), yang terdiri dari suami atau istri, ibu, dan bapak, bagaimana formula pembagian bagian ibu menurut pendapat jumhur sahabat dan mazhab Syafi'i?",
+      "opsi": [
+        "Ibu mendapat 1/3 dari seluruh harta warisan",
+        "Ibu mendapat 1/3 dari sisa harta setelah diambil bagian suami atau istri",
+        "Ibu mendapat 1/6 secara mutlak tanpa perubahan",
+        "Ibu mendapat setengah dari bagian bapak secara proporsional"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Dalam dua kasus Gharrawain, yaitu suami bersama ibu dan bapak atau istri bersama ibu dan bapak, ibu memperoleh 1/3 dari sisa harta setelah bagian pasangan diambil. Formula ini menyebabkan bagian bapak menjadi dua kali bagian ibu."
+    }
+  },
+  {
+    "index": 248,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Menurut mazhab Hanafi, apa hukum menyembelih hewan kurban atau hewan halal menggunakan alat tajam selain besi, seperti pecahan kaca, bambu, atau batu tajam?",
+      "opsi": [
+        "Mutlak haram dan hewan menjadi bangkai",
+        "Sah dan halal selama alat tersebut tajam serta dapat mengalirkan darah dan memutus saluran penyembelihan",
+        "Makruh tahrim kecuali dalam keadaan darurat perang",
+        "Hanya sah jika menggunakan batu alam, tetapi tidak sah jika menggunakan kaca atau bambu"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Mazhab Hanafi membolehkan penyembelihan menggunakan benda tajam yang dapat mengalirkan darah dan memutus saluran penyembelihan, selain gigi dan tulang. Karena itu, alat dari besi, bambu, kaca, maupun batu tajam dapat digunakan."
+    }
+  },
+  {
+    "index": 249,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Super Hard",
+      "xp": 200,
+      "soal": "Bagaimana hukum menetapkan batas harga maksimal (tas'ir) di pasar bebas menurut perspektif hukum Islam?",
+      "opsi": [
+        "Haram secara mutlak karena melanggar kebebasan pasar",
+        "Boleh dalam kondisi tertentu demi kemaslahatan umum dan mencegah kezaliman",
+        "Wajib diterapkan pada seluruh barang tanpa pengecualian",
+        "Batil secara hukum syariat Islam"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Penetapan harga oleh pemerintah pada dasarnya tidak dibenarkan apabila dilakukan secara sewenang-wenang dan merugikan pedagang. Namun, intervensi dapat dibolehkan apabila terdapat kebutuhan nyata, seperti praktik monopoli, penimbunan, atau manipulasi harga yang merugikan masyarakat. Kebijakan tersebut harus didasarkan pada keadilan dan kemaslahatan."
+    }
+  },
+  {
+    "index": 250,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Super Hard",
+      "xp": 200,
+      "soal": "Dalam perbandingan mazhab Syafi'i dan Hanafi mengenai batas aurat wanita merdeka ketika melaksanakan salat, mazhab Syafi'i berpendapat bahwa seluruh tubuh wanita merupakan aurat kecuali...",
+      "opsi": [
+        "Wajah dan kedua telapak tangan sampai pergelangan",
+        "Wajah, seluruh telapak tangan, dan kaki sampai mata kaki",
+        "Wajah saja, sedangkan telapak tangan termasuk aurat",
+        "Wajah, telapak tangan, dan seluruh punggung telapak kaki"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Menurut mazhab Syafi'i, aurat wanita merdeka dalam salat adalah seluruh tubuh kecuali wajah dan kedua telapak tangan, baik bagian dalam maupun luarnya. Berbeda dengan mazhab Hanafi yang juga mengecualikan kedua kaki hingga mata kaki menurut pendapat yang masyhur."
+    }
+  },
+  {
+    "index": 251,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Super Hard",
+      "xp": 200,
+      "soal": "Bagaimana status hukum jual beli 'inah, yaitu transaksi seseorang menjual barang secara kredit kemudian membelinya kembali secara tunai dengan harga lebih murah, menurut mazhab Syafi'i dan Hambali?",
+      "opsi": [
+        "Menurut Syafi'i sah secara lahiriah, sedangkan menurut Hambali haram dan tidak sah",
+        "Haram dan tidak sah menurut kedua mazhab karena merupakan modus riba",
+        "Sah dan dianjurkan dalam mazhab Syafi'i jika terdapat akad tertulis",
+        "Makruh tanzih menurut kedua mazhab"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Mazhab Syafi'i pada prinsipnya memandang akad jual beli tersebut sah secara lahiriah apabila rukun dan syaratnya terpenuhi, meskipun niat dan tujuan tersembunyi dapat menjadi persoalan tersendiri. Mazhab Hambali melarang jual beli 'inah karena dipandang sebagai siasat untuk memperoleh riba."
+    }
+  },
+  {
+    "index": 252,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Super Hard",
+      "xp": 200,
+      "soal": "Apa konsekuensi hukum talak yang dijatuhkan kepada istri sebelum terjadinya hubungan suami istri (dukhul)?",
+      "opsi": [
+        "Istri tidak memiliki masa iddah dan talak tersebut berstatus bain sughra",
+        "Istri wajib menjalani masa iddah selama tiga kali masa suci",
+        "Suami wajib melakukan rujuk secara otomatis setelah tiga bulan",
+        "Suami dapat merujuk istri kapan saja tanpa akad baru"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Berdasarkan QS. Al-Ahzab ayat 49, wanita yang diceraikan sebelum terjadi dukhul tidak memiliki masa iddah. Apabila talak telah dijatuhkan, hubungan perkawinan berakhir dan suami tidak dapat melakukan rujuk kecuali melalui akad nikah serta mahar yang baru."
+    }
+  },
+  {
+    "index": 253,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Super Hard",
+      "xp": 200,
+      "soal": "Menurut mazhab Maliki, bagaimana status hukum air musta'mal, yaitu air yang telah digunakan untuk mengangkat hadas melalui wudhu atau mandi wajib?",
+      "opsi": [
+        "Suci dan menyucikan",
+        "Suci tetapi tidak menyucikan",
+        "Najis mutlak karena bercampur dengan kotoran maknawi",
+        "Makruh digunakan untuk mencuci pakaian"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Menurut mazhab Maliki, air musta'mal tetap dihukumi suci dan menyucikan selama tidak mengalami perubahan sifat akibat najis atau benda lain yang menghilangkan kemutlakannya. Penggunaannya untuk bersuci pada dasarnya diperbolehkan."
+    }
+  },
+  {
+    "index": 254,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Menurut mazhab Syafi'i dalam Qaul Jadid, bagaimana status hukum air musta'mal, yaitu air sisa basuhan wudhu atau mandi wajib?",
+      "opsi": [
+        "Suci dan menyucikan",
+        "Suci tetapi tidak menyucikan",
+        "Najis mutlak karena bercampur dengan kotoran maknawi",
+        "Makruh digunakan untuk mencuci pakaian"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Menurut pendapat baru (Qaul Jadid) Imam Syafi'i, air musta'mal tetap suci, tetapi tidak dapat digunakan kembali untuk mengangkat hadas. Hal ini karena air tersebut telah digunakan untuk ibadah bersuci sebelumnya."
+    }
+  },
+  {
+    "index": 255,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Super Hard",
+      "xp": 200,
+      "soal": "Menurut mazhab Syafi'i dalam Qaul Qadim, bagaimana status hukum air musta'mal, yaitu air sisa basuhan wudhu atau mandi wajib?",
+      "opsi": [
+        "Suci dan menyucikan",
+        "Suci tetapi tidak menyucikan",
+        "Najis mutlak karena bercampur dengan kotoran maknawi",
+        "Makruh digunakan untuk mencuci pakaian"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Dalam Qaul Qadim, air musta'mal dipandang tetap suci dan menyucikan. Pendapat ini mempertimbangkan bahwa air tersebut masih termasuk kategori air yang suci. Salah satu dalil mengenai sifat menyucikan air terdapat dalam QS. Al-Furqan ayat 48: وَأَنْزَلْنَا مِنَ السَّمَاءِ مَاءً طَهُورًا."
+    }
+  },
+  {
+    "index": 256,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Super Hard",
+      "xp": 200,
+      "soal": "Menurut mazhab Syafi'i, berapa jumlah jenis air mutlak yang dapat digunakan untuk bersuci?",
+      "opsi": [
+        "4 jenis",
+        "8 jenis",
+        "5 jenis",
+        "7 jenis"
+      ],
+      "jawabanBenar": 3,
+      "penjelasan": "Dalam pembagian yang masyhur di kalangan ulama Syafi'iyah, air mutlak terdiri dari tujuh jenis berdasarkan asalnya, yaitu air hujan, air laut, air sungai, air sumur, air mata air, air salju, dan air embun. Seluruhnya termasuk air yang suci dan menyucikan selama tidak berubah sifat kemutlakannya."
+    }
+  },
+  {
+    "index": 257,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Super Hard",
+      "xp": 200,
+      "soal": "Dalam persoalan hukum medis kontemporer, bagaimana hukum pencangkokan organ tubuh dari orang yang telah dinyatakan mengalami mati batang otak (brain death) kepada orang yang masih hidup menurut sejumlah pandangan fatwa Islam kontemporer?",
+      "opsi": [
+        "Haram secara mutlak",
+        "Boleh dengan memenuhi persyaratan syariat dan etika medis",
+        "Makruh tahrim",
+        "Hanya boleh apabila donor dan penerima memiliki hubungan darah"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Sejumlah ulama dan lembaga fatwa kontemporer membolehkan transplantasi organ dengan persyaratan tertentu, seperti adanya kebutuhan medis, persetujuan yang sah, tidak diperjualbelikan, serta terpenuhinya kriteria kematian menurut otoritas yang berwenang. Namun, status mati batang otak masih menjadi persoalan yang diperselisihkan dan tidak dapat digeneralisasi sebagai kesepakatan seluruh ulama atau lembaga fatwa."
+    }
+  },
+  {
+    "index": 258,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Super Hard",
+      "xp": 200,
+      "soal": "Bagaimana sikap ulama ushul fikih mazhab Hanafi terhadap penggunaan dalil Mafhum Mukhalafah (pemahaman kebalikan dari suatu ketentuan dalam nash) sebagai hujjah hukum?",
+      "opsi": [
+        "Menerimanya secara mutlak untuk semua jenis teks Al-Qur'an dan hadis",
+        "Menolaknya secara mutlak sebagai dasar penetapan hukum",
+        "Menolaknya sebagai prinsip umum, dengan pengecualian pada kondisi tertentu",
+        "Menjadikannya dalil utama di atas qiyas jali"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Mazhab Hanafi pada prinsipnya tidak menjadikan Mafhum Mukhalafah sebagai hujjah, terutama ketika sifat, syarat, atau batasan dalam nash dipandang memiliki tujuan tertentu selain membatasi hukum. Mereka lebih mengutamakan petunjuk eksplisit dari lafaz dan metode penalaran hukum lainnya."
+    }
+  },
+  {
+    "index": 259,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Dalam mazhab Syafi'i, bagaimana hukum melafalkan niat salat secara lisan (talaffuzh bin-niyah) sebelum melakukan takbiratul ihram?",
+      "opsi": [
+        "Haram karena tidak ada contoh dari Nabi ﷺ",
+        "Wajib dilakukan agar hati lebih khusyuk",
+        "Sunnah atau mustahab sebagai sarana membantu memantapkan hati",
+        "Mubah karena tidak terdapat larangan maupun perintah khusus"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Dalam tradisi mazhab Syafi'i, melafalkan niat sebelum takbiratul ihram dipandang sunnah oleh banyak ulama Syafi'iyah sebagai sarana membantu hati menghadirkan niat. Namun, niat yang menjadi syarat sah salat tetap berada di dalam hati, bukan sekadar ucapan lisan."
+    }
+  },
+  {
+    "index": 260,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Dalam mazhab Hambali, apabila makmum lupa melakukan tasyahud awal hingga terlanjur berdiri tegak dan mulai membaca ayat Al-Qur'an, bagaimana pelaksanaan sujud sahwinya?",
+      "opsi": [
+        "Dilakukan sebelum salam akhir",
+        "Dilakukan setelah salam akhir",
+        "Tidak perlu sujud sahwi karena dimaafkan",
+        "Harus mengulang seluruh rakaat salat dari awal"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Dalam mazhab Hambali, apabila seseorang meninggalkan tasyahud awal karena lupa dan telah berdiri sempurna, ia tidak perlu kembali duduk. Ia melanjutkan salat dan melakukan sujud sahwi sebelum salam karena meninggalkan kewajiban salat akibat lupa."
+    }
+  }
 ]);
