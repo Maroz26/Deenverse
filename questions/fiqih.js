@@ -1021,5 +1021,123 @@ window.questionBankParts.push(...[
       "jawabanBenar": 0,
       "penjelasan": "Dalam mazhab Hambali, apabila seseorang meninggalkan tasyahud awal karena lupa dan telah berdiri sempurna, ia tidak perlu kembali duduk. Ia melanjutkan salat dan melakukan sujud sahwi sebelum salam karena meninggalkan kewajiban salat akibat lupa."
     }
+  }, {
+    "index": 261,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Apa definisi atau bentuk operasional dari transaksi Ba'i al-'Inah dalam fikih muamalah?",
+      "opsi": [
+        "Menjual barang secara tunai lalu membelinya kembali dengan harga yang sama",
+        "Menjual barang secara tidak tunai (kredit) lalu membelinya kembali secara tunai dengan harga yang lebih murah",
+        "Berutang uang tunai dengan jaminan barang tanpa akad jual beli",
+        "Kerja sama antara pemilik modal dan pengelola dengan sistem bagi hasil"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Ba'i al-'Inah adalah akad jual beli di mana seseorang menjual suatu barang kepada orang lain secara kredit/cicil, kemudian ia membelinya kembali dari pembeli tersebut secara tunai dengan harga yang lebih rendah."
+    }
+  },
+  {
+    "index": 262,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Bagaimana pandangan mayoritas ulama (seperti Mazhab Hanafi, Maliki, dan Hambali) terhadap keabsahan hukum transaksi Ba'i al-'Inah?",
+      "opsi": [
+        "Sah dan dianjurkan karena memenuhi syarat formal jual beli",
+        "Makruh tahrim namun akadnya tetap sah secara hukum Islam",
+        "Haram dan tidak sah karena dipandang sebagai bentuk rekayasa (hihlah) untuk melakukan transaksi riba",
+        "Mubah secara mutlak tanpa ada perselisihan ulama"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Mayoritas ulama mengharamkan Ba'i al-'Inah karena substansinya merupakan trik (hihlah) untuk melegalkan pinjaman berbunga (riba), di mana seseorang meminjam uang melalui perantara jual-beli barang fiktif/simbolis."
+    }
+  },
+  {
+    "index": 263,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Mazhab manakah dalam fikih Islam yang secara masyhur membolehkan transaksi Ba'i al-'Inah dengan alasan secara lahiriah akad jual belinya memenuhi rukun dan syarat?",
+      "opsi": [
+        "Mazhab Hanafi",
+        "Mazhab Maliki",
+        "Mazhab Syafi'i",
+        "Mazhab Zahiri"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Dalam pendapat yang masyhur di kalangan Mazhab Syafi'i, Ba'i al-'Inah diharamkan jika dipersyaratkan di awal, namun dipandang sah secara fikih jika akad dilakukan secara terpisah tanpa syarat yang mengikat karena secara lahiriah rukun jual belinya terpenuhi."
+    }
+  },
+  {
+    "index": 264,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Secara substansi ekonomi, motif utama orang yang melakukan transaksi Ba'i al-'Inah biasanya adalah untuk...",
+      "opsi": [
+        "Mendapatkan tambahan modal usaha murni tanpa risiko",
+        "Mendapatkan pinjaman uang tunai secara instan dengan kewajiban membayar lebih mahal di kemudian hari",
+        "Melakukan investasi jangka panjang di sektor agrikultur",
+        "Memperluas kepemilikan aset riil di pasar bebas"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Substansi dari Ba'i al-'Inah bukanlah pertukaran barang riil, melainkan cara mendapatkan uang tunai instan (likuiditas) yang harus dikembalikan dengan jumlah lebih besar di masa depan, yang esensinya sama persis dengan utang-piutang berbunga (riba)."
+    }
+  },
+  {
+    "index": 265,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Apa perbedaan utama antara transaksi Ba'i al-'Inah dengan Tawarruq?",
+      "opsi": [
+        "Dalam 'Inah barang dijual kembali kepada orang yang sama (penjual awal), sedangkan dalam Tawarruq barang dijual kepada pihak ketiga (selain penjual awal) untuk mendapatkan uang tunai",
+        "Dalam 'Inah tidak ada barang fisik yang dilibatkan sama sekali",
+        "Tawarruq diharamkan oleh seluruh ulama, sedangkan 'Inah disepakati kehalalannya",
+        "Tidak ada perbedaan antara 'Inah dan Tawarruq karena keduanya menggunakan skema cicilan"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Perbedaan kuncinya terletak pada pihak pembeli kedua. Pada 'Inah, barang dijual kembali ke pihak pertama (kreditur awal). Sedangkan pada Tawarruq, setelah dibeli secara kredit, barang dijual kepada pihak ketiga (orang lain) secara tunai untuk mendapatkan uang."
+    }
+  },
+  {
+    "index": 261,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Berikut ini yang tidak termasuk jenis zakat mal adalah ...",
+      "opsi": [
+        "Zakat emas dan perak",
+        "Zakat perniagaan",
+        "Zakat fitrah",
+        "Zakat pertanian"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Zakat secara umum dibagi menjadi dua kategori, yaitu zakat fitrah dan zakat mal. Zakat mal dikenakan terhadap harta tertentu yang memenuhi persyaratan syariat, seperti emas, perak, perdagangan, pertanian, peternakan, dan rikaz. Zakat fitrah merupakan kategori zakat tersendiri, bukan bagian dari zakat mal."
+    }
+  },
+  {
+    "index": 262,
+    "question": {
+      "kategori": "Fiqih",
+      "tingkat": "Easy",
+      "xp": 50,
+      "soal": "Secara umum, zakat dalam Islam terbagi menjadi berapa jenis?",
+      "opsi": [
+        "Satu jenis",
+        "Dua jenis",
+        "Tiga jenis",
+        "Empat jenis"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Secara umum, zakat dibagi menjadi dua kategori utama, yaitu zakat fitrah dan zakat mal. Zakat fitrah diwajibkan berkaitan dengan berakhirnya bulan Ramadan, sedangkan zakat mal dikenakan atas harta yang memenuhi ketentuan nisab dan persyaratan zakat lainnya."
+    }
   }
 ]);

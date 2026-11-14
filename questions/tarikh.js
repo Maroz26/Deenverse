@@ -1916,6 +1916,652 @@ window.questionBankParts.push(...[
       "jawabanBenar": 0,
       "penjelasan": "Sejumlah riwayat sirah menyebutkan bahwa Khadijah pernah menikah dengan 'Atiq bin 'A'id dan Abu Halah At-Tamimi sebelum menikah dengan Rasulullah ﷺ. Namun, urutan pernikahan, sebagian nama, dan detail keturunan dari pernikahan terdahulu berbeda dalam sejumlah sumber sejarah. Karena itu, kedua nama tersebut lebih tepat dipahami sebagai nama yang disebut dalam riwayat, bukan rincian yang disepakati secara mutlak."
     }
+  },
+  {
+    "index": 263,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Berapakah jumlah pasukan kaum Muslimin yang bertahan dalam Perang Uhud setelah Abdullah bin Ubay bin Salul menarik sebagian pasukannya?",
+      "opsi": [
+        "500 orang",
+        "600 orang",
+        "700 orang",
+        "1.000 orang"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Pasukan Muslimin awalnya berjumlah sekitar 1.000 orang. Namun, Abdullah bin Ubay bin Salul menarik sekitar 300 orang sebelum pertempuran, sehingga tersisa sekitar 700 orang yang melanjutkan perjalanan menuju Uhud."
+    }
+  },
+  {
+    "index": 264,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Berapakah jumlah pasukan kaum Quraisy yang dikerahkan dalam Perang Uhud?",
+      "opsi": [
+        "1.000 orang",
+        "2.000 orang",
+        "3.000 orang",
+        "5.000 orang"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Pasukan Quraisy berjumlah sekitar 3.000 orang, termasuk sekitar 200 pasukan berkuda. Mereka dipimpin oleh Abu Sufyan bin Harb, sedangkan pasukan berkudanya dipimpin oleh Khalid bin Walid yang saat itu masih berada di pihak Quraisy."
+    }
+  },
+  {
+    "index": 265,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Easy",
+      "xp": 50,
+      "soal": "Siapakah panglima pasukan berkuda Quraisy yang berhasil memanfaatkan celah pertahanan pasukan pemanah kaum Muslimin dalam Perang Uhud?",
+      "opsi": [
+        "Ikrimah bin Abu Jahl",
+        "Abu Sufyan bin Harb",
+        "Khalid bin Walid",
+        "Amr bin Ash"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Khalid bin Walid memimpin pasukan berkuda Quraisy. Ketika sebagian pasukan pemanah Muslim meninggalkan posisi mereka, Khalid memanfaatkan celah tersebut untuk menyerang dari arah belakang dan mengubah jalannya pertempuran. Saat Perang Uhud berlangsung, ia belum masuk Islam."
+    }
+  },
+  {
+    "index": 266,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Pada tahun 6 H, setelah ekspedisi Bani Musthaliq, Aisyah binti Abu Bakar رَضِيَ ٱللَّٰهُ عَنْهَا mendapat fitnah yang menyebabkan turunnya ayat-ayat pembebasannya dalam Surah An-Nur. Apakah nama peristiwa tersebut?",
+      "opsi": [
+        "Haditsul Ifki",
+        "Fathul Makkah",
+        "Ghazwatul Khandaq",
+        "Peristiwa Baiat Aqabah"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Peristiwa tersebut dikenal sebagai Haditsul Ifki, yaitu fitnah dan tuduhan dusta terhadap kehormatan Aisyah رَضِيَ ٱللَّٰهُ عَنْهَا. Allah menurunkan ayat 11–20 Surah An-Nur untuk menjelaskan kedustaan tuduhan tersebut dan membersihkan nama Aisyah. Peristiwa ini terjadi setelah ekspedisi Bani Musthaliq yang umumnya ditempatkan pada tahun 6 H."
+    }
+  },
+  {
+    "index": 267,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah tokoh kaum munafik yang memimpin penarikan sekitar 300 orang dari pasukan Muslimin menjelang Perang Uhud?",
+      "opsi": [
+        "Abdullah bin Ubay bin Salul",
+        "Abdullah bin Ubai bin Ka'ab",
+        "Abu Amir ar-Rahib",
+        "Abdullah bin Saba"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Abdullah bin Ubay bin Salul merupakan tokoh kaum munafik di Madinah. Menjelang Perang Uhud, ia menarik sekitar 300 orang dari pasukan Muslimin dengan alasan bahwa pendapatnya tidak diikuti oleh Rasulullah ﷺ. Akibatnya, pasukan Muslimin yang melanjutkan perjalanan hanya berjumlah sekitar 700 orang."
+    }
+  },
+  {
+    "index": 268,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Menurut riwayat sirah yang masyhur, tiga orang yang dikenai hukuman 80 kali dera karena keterlibatan mereka dalam menyebarkan fitnah Haditsul Ifki terhadap Aisyah رَضِيَ ٱللَّٰهُ عَنْهَا adalah ...",
+      "opsi": [
+        "Abdullah bin Ubay bin Salul, Abu Lahab, dan Mistah bin Utsatsah",
+        "Hassan bin Tsabit, Mistah bin Utsatsah, dan Hamnah binti Jahsy",
+        "Safwan bin al-Mu'attal, Hassan bin Tsabit, dan Zaid bin Haritsah",
+        "Hamnah binti Jahsy, Abdullah bin Ubay bin Salul, dan Abu Sufyan"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Tiga orang yang disebut dalam riwayat sirah sebagai pihak yang dikenai hukuman dera adalah Hassan bin Tsabit, Mistah bin Utsatsah, dan Hamnah binti Jahsy. Hukuman tersebut berkaitan dengan keterlibatan mereka dalam menyebarkan tuduhan dusta terhadap Aisyah رَضِيَ ٱللَّٰهُ عَنْهَا. Abdullah bin Ubay bin Salul dikenal sebagai penggerak utama penyebaran fitnah, tetapi tidak termasuk dalam tiga nama yang disebut dalam riwayat pelaksanaan hukuman tersebut."
+    }
+  },
+  {
+    "index": 269,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah sahabat Rasulullah ﷺ yang pernah menjadi anak angkat beliau dan namanya disebutkan secara eksplisit dalam Al-Qur'an?",
+      "opsi": [
+        "Usamah bin Zaid",
+        "Zaid bin Haritsah",
+        "Abdullah bin Umar",
+        "Ali bin Abi Thalib"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Zaid bin Haritsah merupakan sahabat Rasulullah ﷺ yang pernah diangkat sebagai anak sebelum turun ketentuan yang membedakan anak angkat dengan anak kandung dalam masalah nasab. Namanya disebutkan secara eksplisit dalam Surah Al-Ahzab ayat 37. Ia merupakan satu-satunya sahabat Nabi yang disebut namanya secara langsung dalam Al-Qur'an."
+    }
+  },
+  {
+    "index": 270,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Sumpah setia kaum Muslimin kepada Rasulullah ﷺ yang dilaksanakan di bawah sebuah pohon saat peristiwa Hudaibiyah disebut ...",
+      "opsi": [
+        "Baiat Aqabah",
+        "Baiat ar-Ridwan",
+        "Baiat an-Nisa",
+        "Baiat al-Hijrah"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Baiat ar-Ridwan merupakan sumpah setia yang dilakukan para sahabat kepada Rasulullah ﷺ di bawah sebuah pohon di Hudaibiyah pada tahun 6 H. Baiat ini berlangsung setelah tersiar kabar bahwa Utsman bin Affan رَضِيَ ٱللَّٰهُ عَنْهُ telah dibunuh ketika menjadi utusan Rasulullah ﷺ ke Makkah. Peristiwa ini disebutkan dalam Surah Al-Fath ayat 18."
+    }
+  },
+  {
+    "index": 271,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah nama asli Abu Bakar Ash-Shiddiq رَضِيَ ٱللَّٰهُ عَنْهُ?",
+      "opsi": [
+        "Abdullah bin Abi Quhafah",
+        "Abdullah bin Utsman bin Affan",
+        "Abdul Ka'bah bin Amir",
+        "Abdullah bin Mas'ud"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Nama Abu Bakar Ash-Shiddiq رَضِيَ ٱللَّٰهُ عَنْهُ adalah Abdullah bin Abi Quhafah. Abu Bakar merupakan kunyah yang lebih dikenal, sedangkan Ash-Shiddiq adalah gelar yang disematkan kepadanya karena kejujuran dan pembenarannya terhadap Rasulullah ﷺ, khususnya dalam peristiwa Isra Mikraj."
+    }
+  },
+  {
+    "index": 272,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Berapakah perkiraan masa kekhalifahan Abu Bakar Ash-Shiddiq رَضِيَ ٱللَّٰهُ عَنْهُ?",
+      "opsi": [
+        "Sekitar 1 tahun 6 bulan",
+        "Sekitar 2 tahun 3 bulan",
+        "Sekitar 3 tahun 6 bulan",
+        "Sekitar 4 tahun"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Abu Bakar Ash-Shiddiq رَضِيَ ٱللَّٰهُ عَنْهُ menjabat sebagai khalifah sejak tahun 11 H hingga wafat pada tahun 13 H. Masa pemerintahannya berlangsung sekitar 2 tahun 3 bulan menurut perhitungan kalender Hijriah. Perbedaan penghitungan hari dapat menghasilkan rincian durasi yang sedikit berbeda."
+    }
+  },
+  {
+    "index": 273,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah khalifah pertama yang dikenal menggunakan gelar Amirul Mukminin secara resmi?",
+      "opsi": [
+        "Abu Bakar Ash-Shiddiq",
+        "Umar bin Khattab",
+        "Utsman bin Affan",
+        "Ali bin Abi Thalib"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Umar bin Khattab رَضِيَ ٱللَّٰهُ عَنْهُ dikenal sebagai khalifah pertama yang menggunakan gelar Amirul Mukminin, yang berarti pemimpin orang-orang beriman. Gelar ini kemudian menjadi sebutan yang umum digunakan bagi para khalifah dalam sejarah pemerintahan Islam."
+    }
+  },
+  {
+    "index": 274,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Umar bin Khattab رَضِيَ ٱللَّٰهُ عَنْهُ memiliki gelar Al-Faruq. Apakah makna dari gelar tersebut?",
+      "opsi": [
+        "Orang yang sangat dermawan",
+        "Pemisah antara kebenaran dan kebatilan",
+        "Pemimpin kaum Muslimin",
+        "Orang yang selalu membenarkan Rasulullah ﷺ"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Al-Faruq bermakna orang yang membedakan atau memisahkan antara kebenaran dan kebatilan. Gelar ini secara tradisional disematkan kepada Umar bin Khattab رَضِيَ ٱللَّٰهُ عَنْهُ. Adapun gelar Ash-Shiddiq lebih dikenal sebagai gelar Abu Bakar Ash-Shiddiq."
+    }
+  },
+  {
+    "index": 275,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah khalifah yang memprakarsai penetapan kalender Hijriah sebagai sistem penanggalan resmi pemerintahan Islam?",
+      "opsi": [
+        "Abu Bakar Ash-Shiddiq",
+        "Umar bin Khattab",
+        "Utsman bin Affan",
+        "Ali bin Abi Thalib"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Umar bin Khattab رَضِيَ ٱللَّٰهُ عَنْهُ memprakarsai penetapan kalender Hijriah sebagai sistem penanggalan resmi pemerintahan Islam. Penetapan tersebut dilakukan sekitar tahun 16 H dengan menjadikan peristiwa hijrah Rasulullah ﷺ dari Makkah ke Madinah sebagai titik awal kalender."
+    }
+  },
+  {
+    "index": 276,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Menurut riwayat al-Mas'udi mengenai pengepungan rumah Utsman bin Affan رَضِيَ ٱللَّٰهُ عَنْهُ, kelompok pemberontak yang datang mengepung beliau berasal dari tiga wilayah, yaitu ...",
+      "opsi": [
+        "Makkah, Madinah, dan Thaif",
+        "Mesir, Kufah, dan Basrah",
+        "Syam, Yaman, dan Hijaz",
+        "Damaskus, Baghdad, dan Kairo"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Dalam riwayat al-Mas'udi, delegasi pemberontak yang terlibat dalam pengepungan rumah Utsman bin Affan رَضِيَ ٱللَّٰهُ عَنْهُ berasal dari Mesir, Kufah, dan Basrah. Peristiwa pengepungan tersebut berakhir dengan terbunuhnya Utsman pada tahun 35 H. Penentuan satu tokoh sebagai dalang tunggal peristiwa ini merupakan persoalan yang memiliki perbedaan riwayat."
+    }
+  },
+  {
+    "index": 277,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Menurut salah satu riwayat yang dinukil al-Mas'udi, siapakah dua orang yang disebut memasuki rumah dan membunuh Utsman bin Affan رَضِيَ ٱللَّٰهُ عَنْهُ?",
+      "opsi": [
+        "Kinana bin Bishr dan Sa'd bin Humran",
+        "Abdurrahman bin Muljam dan Qutayrah",
+        "Hamran bin Sudan dan Abdullah bin Saba",
+        "Amr bin Ash dan Abu Musa al-Asy'ari"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Dalam salah satu riwayat al-Mas'udi, dua nama yang disebut sebagai orang yang masuk dan membunuh Utsman bin Affan رَضِيَ ٱللَّٰهُ عَنْهُ adalah Kinana bin Bishr dan Sa'd bin Humran. Identifikasi pelaku dalam berbagai kitab sejarah tidak selalu seragam, sehingga pasangan nama ini harus dipahami sebagai keterangan berdasarkan riwayat tersebut, bukan satu-satunya versi yang ada."
+    }
+  },
+  {
+    "index": 278,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Berapakah lama masa kekhalifahan Umar bin Khattab رَضِيَ ٱللَّٰهُ عَنْهُ menurut perhitungan yang umum digunakan dalam kitab-kitab sejarah?",
+      "opsi": [
+        "8 tahun 6 bulan 4 hari",
+        "9 tahun 10 bulan 4 hari",
+        "10 tahun 6 bulan 4 hari",
+        "12 tahun 6 bulan 4 hari"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Umar bin Khattab رَضِيَ ٱللَّٰهُ عَنْهُ menjabat sebagai khalifah sejak tahun 13 H hingga wafat pada tahun 23 H. Dalam salah satu perhitungan sejarah yang masyhur, masa kekhalifahannya berlangsung selama 10 tahun, 6 bulan, dan 4 hari."
+    }
+  },
+  {
+    "index": 279,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Berapakah lama masa kekhalifahan Utsman bin Affan رَضِيَ ٱللَّٰهُ عَنْهُ?",
+      "opsi": [
+        "8 tahun",
+        "10 tahun",
+        "12 tahun",
+        "15 tahun"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Utsman bin Affan رَضِيَ ٱللَّٰهُ عَنْهُ merupakan khalifah ketiga setelah Abu Bakar dan Umar. Beliau memimpin kaum Muslimin selama kurang lebih 12 tahun, sejak tahun 23 H hingga terbunuh pada tahun 35 H."
+    }
+  },
+  {
+    "index": 280,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Pada tahun berapakah Khalifah Utsman bin Affan رَضِيَ ٱللَّٰهُ عَنْهُ wafat?",
+      "opsi": [
+        "Tahun 23 H",
+        "Tahun 30 H",
+        "Tahun 35 H",
+        "Tahun 40 H"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Utsman bin Affan رَضِيَ ٱللَّٰهُ عَنْهُ wafat akibat pembunuhan pada tahun 35 H, setelah rumahnya dikepung oleh kelompok pemberontak. Peristiwa ini menjadi salah satu titik penting dalam sejarah fitnah besar pertama di kalangan kaum Muslimin."
+    }
+  },
+  {
+    "index": 281,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Mengapa konflik antara pasukan Ali bin Abi Thalib رَضِيَ ٱللَّٰهُ عَنْهُ dan kelompok yang bersama Aisyah binti Abu Bakar رَضِيَ ٱللَّٰهُ عَنْهَا dikenal dengan nama Perang Jamal?",
+      "opsi": [
+        "Karena unta yang ditunggangi Aisyah menjadi titik pusat pertempuran",
+        "Karena Ali bin Abi Thalib menggunakan unta sebagai kendaraan perang utama",
+        "Karena seluruh pasukan kedua belah pihak menggunakan unta sebagai tunggangan",
+        "Karena pertempuran berlangsung di sebuah pasar yang khusus menjual unta"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Perang Jamal dinamakan demikian karena unta yang ditunggangi Aisyah رَضِيَ ٱللَّٰهُ عَنْهَا dalam sekedupnya menjadi titik pusat pertempuran di Basrah. Istilah Jamal berarti unta. Aisyah tidak secara langsung memimpin pertempuran dengan menyerang pasukan Ali, melainkan berada dalam rombongan yang terlibat dalam konflik tersebut."
+    }
+  },
+  {
+    "index": 282,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Super Hard",
+      "xp": 200,
+      "soal": "Menurut riwayat yang mencatat pertemuan di Daumatul Jandal, di manakah dan pada tahun berapakah kedua juru damai dalam proses tahkim pasca-Perang Shiffin bertemu?",
+      "opsi": [
+        "Di Adzruh, tahun 36 H",
+        "Di Daumatul Jandal, tahun 37 H",
+        "Di Shiffin, tahun 38 H",
+        "Di Kufah, tahun 39 H"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Pertemuan kedua juru damai dalam proses tahkim antara pihak Ali dan Muawiyah dicatat berlangsung di Daumatul Jandal pada tahun 37 H dalam salah satu riwayat sejarah, termasuk penanggalan yang merujuk kepada al-Tabari. Terdapat pula riwayat lain yang menyebut tahun 38 H dan lokasi Adzruh. Karena itu, jawaban ini mengikuti riwayat Daumatul Jandal tahun 37 H."
+    }
+  },
+  {
+    "index": 283,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Pada tahun berapakah Khalifah Ali bin Abi Thalib رَضِيَ ٱللَّٰهُ عَنْهُ wafat?",
+      "opsi": [
+        "Tahun 35 H",
+        "Tahun 37 H",
+        "Tahun 40 H",
+        "Tahun 41 H"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Ali bin Abi Thalib رَضِيَ ٱللَّٰهُ عَنْهُ wafat pada tahun 40 H setelah ditikam oleh Abdurrahman bin Muljam ketika hendak melaksanakan salat Subuh di Kufah. Wafatnya beliau mengakhiri masa kekhalifahan Khulafaur Rasyidin menurut urutan yang umum dikenal."
+    }
+  },
+  {
+    "index": 284,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah orang yang menyerang dan membunuh Ali bin Abi Thalib رَضِيَ ٱللَّٰهُ عَنْهُ?",
+      "opsi": [
+        "Abdullah bin Ubay bin Salul",
+        "Abdurrahman bin Muljam al-Muradi",
+        "Kinana bin Bishr",
+        "Sa'd bin Abi Waqqash"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Ali bin Abi Thalib رَضِيَ ٱللَّٰهُ عَنْهُ diserang oleh Abdurrahman bin Muljam al-Muradi, seorang tokoh Khawarij. Penyerangan tersebut terjadi di Masjid Kufah ketika Ali hendak melaksanakan salat Subuh pada tahun 40 H."
+    }
+  },
+  {
+    "index": 285,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Menurut riwayat yang menjelaskan penyembunyian lokasi pemakaman Ali bin Abi Thalib رَضِيَ ٱللَّٰهُ عَنْهُ, apakah alasan utama pemakaman beliau dilakukan secara tersembunyi?",
+      "opsi": [
+        "Untuk menghindari perebutan wilayah pemakaman oleh penguasa Romawi",
+        "Untuk mencegah musuh dan kaum Khawarij merusak atau menodai makamnya",
+        "Karena masyarakat Kufah menolak menerima jenazah beliau",
+        "Karena jenazah beliau dipindahkan untuk dimakamkan di Madinah"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Sebagian riwayat sejarah menyebutkan bahwa lokasi pemakaman Ali bin Abi Thalib رَضِيَ ٱللَّٰهُ عَنْهُ sengaja dirahasiakan untuk menghindari tindakan musuh, khususnya kaum Khawarij, yang berpotensi merusak makam beliau. Lokasi pemakaman Ali sendiri memiliki beberapa versi dalam sumber-sumber sejarah, dengan Najaf dan wilayah sekitar Kufah menjadi lokasi yang paling dikenal dalam tradisi."
+    }
+  },
+  {
+    "index": 286,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Tahun ketika Hasan bin Ali bin Abi Thalib رَضِيَ ٱللَّٰهُ عَنْهُمَا menyerahkan kekuasaan kepada Muawiyah bin Abi Sufyan رَضِيَ ٱللَّٰهُ عَنْهُمَا dikenal dengan sebutan ...",
+      "opsi": [
+        "عَامُ الْفِيلِ",
+        "عَامُ الْحُزْنِ",
+        "عَامُ الْجَمَاعَةِ",
+        "عَامُ الْفَتْحِ"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Tahun 41 H dikenal sebagai عَامُ الْجَمَاعَةِ (Tahun Persatuan). Sebutan ini berkaitan dengan kesepakatan Hasan bin Ali رَضِيَ ٱللَّٰهُ عَنْهُمَا untuk menyerahkan kepemimpinan kepada Muawiyah bin Abi Sufyan رَضِيَ ٱللَّٰهُ عَنْهُمَا, sehingga kaum Muslimin kembali berada di bawah satu kepemimpinan setelah konflik politik sebelumnya."
+    }
+  },
+  {
+    "index": 287,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Berdasarkan riwayat sirah Ibn Ishaq, siapa saja yang terlibat dalam memandikan jenazah Rasulullah ﷺ?",
+      "opsi": [
+        "Ali bin Abi Thalib, Abbas bin Abdul Muthalib, Al-Fadhl bin Abbas, Qutsam bin Abbas, Usamah bin Zaid, dan Syukran",
+        "Abu Bakar, Umar, Utsman, Ali, Bilal, dan Abu Hurairah",
+        "Ali bin Abi Thalib, Abu Bakar, Zubair bin Awwam, Salman al-Farisi, dan Bilal",
+        "Abbas bin Abdul Muthalib, Khalid bin Walid, Sa'ad bin Abi Waqqash, dan Abu Ubaidah bin Jarrah"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Menurut riwayat Ibn Ishaq, orang-orang yang terlibat dalam memandikan jenazah Rasulullah ﷺ adalah Ali bin Abi Thalib, Abbas bin Abdul Muthalib, kedua putra Abbas yaitu Al-Fadhl dan Qutsam, Usamah bin Zaid, serta Syukran. Dalam riwayat tersebut, Ali menjadi orang yang memandikan tubuh Rasulullah ﷺ, sedangkan Usamah dan Syukran turut menuangkan air."
+    }
+  },
+  {
+    "index": 288,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Easy",
+      "xp": 50,
+      "soal": "Apakah nama kota Madinah sebelum Rasulullah ﷺ melakukan hijrah ke sana?",
+      "opsi": [
+        "Makkah",
+        "Yatsrib",
+        "Thaif",
+        "Khaibar"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Sebelum hijrah Rasulullah ﷺ, kota Madinah dikenal dengan nama Yatsrib. Setelah kedatangan Rasulullah ﷺ dan berkembangnya masyarakat Islam di sana, kota tersebut dikenal sebagai Madinah al-Munawwarah."
+    }
+  },
+  {
+    "index": 289,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Wafatnya Khadijah binti Khuwailid رَضِيَ ٱللَّٰهُ عَنْهَا dan Abu Talib pada masa dakwah Rasulullah ﷺ dikenal sebagai peristiwa yang menandai tahun ...",
+      "opsi": [
+        "عام الحزن",
+        "عام الفتح",
+        "عام الجماعة",
+        "عام الوفود"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Wafatnya Khadijah binti Khuwailid رَضِيَ ٱللَّٰهُ عَنْهَا dan Abu Talib pada tahun kesepuluh kenabian dikenal sebagai عام الحزن atau Tahun Kesedihan. Rasulullah ﷺ kehilangan dua sosok penting yang selama ini memberikan dukungan emosional dan perlindungan dalam dakwahnya. Abu Talib merupakan paman beliau, sedangkan Khadijah adalah istri beliau."
+    }
+  },
+  {
+    "index": 290,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Super Hard",
+      "xp": 200,
+      "soal": "Dinasti Al-Murabithun (Almoravid), yaitu dinasti Muslim Berber yang berkembang di Afrika Utara dan Al-Andalus pada abad ke-11 hingga ke-12, didirikan melalui gerakan dakwah yang dipelopori oleh ...",
+      "opsi": [
+        "Yusuf bin Tasyfin",
+        "Abu Bakr bin Umar",
+        "Yahya bin Umar",
+        "Abdullah bin Yasin"
+      ],
+      "jawabanBenar": 3,
+      "penjelasan": "Abdullah bin Yasin merupakan tokoh agama yang memelopori gerakan reformasi keagamaan di kalangan suku-suku Sanhaja, yang kemudian melahirkan Dinasti Al-Murabithun. Yusuf bin Tasyfin berperan besar dalam memperluas dan memperkuat kekuasaan dinasti tersebut serta mendirikan Marrakesh sebagai pusat pemerintahan pada tahun 454 H."
+    }
+  },
+  {
+    "index": 291,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Siapakah empat panglima yang ditugaskan oleh Abu Bakar Ash-Shiddiq رَضِيَ ٱللَّٰهُ عَنْهُ untuk memimpin pasukan menuju wilayah Syam dalam menghadapi kekuatan Kekaisaran Bizantium pada masa pemerintahan Heraklius?",
+      "opsi": [
+        "Khalid bin Walid, Sa'ad bin Abi Waqqash, Amr bin Ash, dan Zubair bin Awwam",
+        "Yazid bin Abi Sufyan, Abu Ubaidah bin Jarrah, Amr bin Ash, dan Syurahbil bin Hasanah",
+        "Abu Musa al-Asy'ari, Muawiyah bin Abi Sufyan, Bilal bin Rabah, dan Khalid bin Walid",
+        "Umar bin Khattab, Ali bin Abi Thalib, Abu Ubaidah bin Jarrah, dan Thalhah bin Ubaidillah"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Empat panglima yang dikirim Abu Bakar Ash-Shiddiq رَضِيَ ٱللَّٰهُ عَنْهُ menuju wilayah Syam adalah Yazid bin Abi Sufyan, Abu Ubaidah bin Jarrah, Amr bin Ash, dan Syurahbil bin Hasanah. Mereka memimpin kelompok pasukan yang ditugaskan menghadapi kekuatan Bizantium di wilayah Syam. Heraklius sendiri merupakan kaisar Bizantium pada masa itu, bukan panglima yang secara pribadi menjadi sasaran keempat pasukan."
+    }
+  },
+  {
+    "index": 292,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Siapakah dua istri Rasulullah ﷺ yang disebut turut serta dalam ekspedisi Bani Musthaliq?",
+      "opsi": [
+        "Aisyah dan Hafshah رَضِيَ ٱللَّٰهُ عَنْهُمَا",
+        "Aisyah dan Ummu Salamah رَضِيَ ٱللَّٰهُ عَنْهُمَا",
+        "Khadijah dan Saudah رَضِيَ ٱللَّٰهُ عَنْهُمَا",
+        "Zainab binti Jahsy dan Juwairiyah رَضِيَ ٱللَّٰهُ عَنْهُمَا"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Aisyah binti Abu Bakar dan Ummu Salamah رَضِيَ ٱللَّٰهُ عَنْهُمَا disebut sebagai dua istri Rasulullah ﷺ yang turut serta dalam ekspedisi Bani Musthaliq. Dalam perjalanan pulang, terjadi peristiwa Haditsul Ifki yang melibatkan Aisyah رَضِيَ ٱللَّٰهُ عَنْهَا setelah beliau tertinggal dari rombongan karena mencari kalungnya."
+    }
+  },
+  {
+    "index": 293,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah khalifah yang menambahkan seruan adzan Jumat di az-Zawra ketika jumlah penduduk Madinah semakin bertambah?",
+      "opsi": [
+        "Abu Bakar Ash-Shiddiq",
+        "Umar bin Khattab",
+        "Utsman bin Affan",
+        "Ali bin Abi Thalib"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Utsman bin Affan رَضِيَ ٱللَّٰهُ عَنْهُ menetapkan adzan tambahan pada hari Jumat ketika jumlah penduduk Madinah semakin bertambah. Adzan tersebut dikumandangkan di az-Zawra untuk mengingatkan masyarakat agar bersiap menghadiri salat Jumat. Peristiwa ini disebutkan dalam hadis riwayat Shahih al-Bukhari nomor 916."
+    }
+  },
+  {
+    "index": 294,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Berapakah jumlah sahabat kaum Muslimin yang gugur sebagai syuhada dalam Perang Uhud?",
+      "opsi": [
+        "40 orang",
+        "50 orang",
+        "70 orang",
+        "100 orang"
+      ],
+      "jawabanBenar": 2,
+      "penjelasan": "Dalam riwayat sejarah yang masyhur, jumlah kaum Muslimin yang gugur sebagai syuhada dalam Perang Uhud adalah 70 orang. Di antara mereka terdapat Hamzah bin Abdul Muthalib رَضِيَ ٱللَّٰهُ عَنْهُ, paman Rasulullah ﷺ, yang gugur dalam pertempuran tersebut."
+    }
+  },
+  {
+    "index": 295,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Berapakah perkiraan jumlah korban dari pihak kaum musyrikin Quraisy dalam Perang Uhud menurut salah satu rekapitulasi riwayat sejarah?",
+      "opsi": [
+        "10 orang",
+        "23 orang",
+        "40 orang",
+        "70 orang"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Salah satu rekapitulasi sejarah mencatat jumlah korban dari pihak Quraisy dalam Perang Uhud sebanyak 23 orang. Angka ini merupakan perkiraan berdasarkan rincian riwayat tertentu dan tidak selalu ditulis sama dalam seluruh sumber sejarah. Berbeda dengan jumlah syuhada Muslimin yang secara luas dikenal berjumlah 70 orang."
+    }
+  },
+  {
+    "index": 296,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Berapakah jumlah laki-laki dan perempuan yang mengikuti Baiat Aqabah pertama?",
+      "opsi": [
+        "10 laki-laki dan 2 perempuan",
+        "12 laki-laki dan tidak ada perempuan",
+        "12 laki-laki dan 2 perempuan",
+        "70 laki-laki dan 2 perempuan"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Baiat Aqabah pertama diikuti oleh 12 orang laki-laki dari Yatsrib. Mereka menyatakan kesetiaan kepada Rasulullah ﷺ dengan janji untuk tidak menyekutukan Allah, tidak mencuri, tidak berzina, tidak membunuh anak-anak, tidak melakukan kedustaan besar, dan tidak mendurhakai Rasulullah ﷺ dalam perkara yang baik."
+    }
+  },
+  {
+    "index": 297,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Berapakah jumlah laki-laki dan perempuan yang mengikuti Baiat Aqabah kedua?",
+      "opsi": [
+        "70 laki-laki dan 1 perempuan",
+        "73 laki-laki dan 2 perempuan",
+        "75 laki-laki dan tidak ada perempuan",
+        "72 laki-laki dan 3 perempuan"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Baiat Aqabah kedua diikuti oleh 73 orang laki-laki dan 2 orang perempuan dari Yatsrib, sehingga jumlah keseluruhannya adalah 75 orang. Dua perempuan tersebut adalah Nusaibah binti Ka'ab dan Asma binti Amr. Dalam baiat ini, mereka berjanji untuk membela dan melindungi Rasulullah ﷺ sebagaimana melindungi keluarga mereka sendiri."
+    }
+  },
+  {
+    "index": 298,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah istri Fir'aun yang dalam tradisi Islam dikenal memohon agar bayi Musa tidak dibunuh ketika ditemukan dan dibawa ke lingkungan istana?",
+      "opsi": [
+        "Hajar",
+        "Asiyah binti Muzahim",
+        "Sarah",
+        "Maryam binti Imran"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Asiyah binti Muzahim dikenal dalam tradisi Islam sebagai istri Fir'aun yang memohon agar bayi Musa tidak dibunuh. Al-Qur'an mengabadikan perkataannya dalam Surah Al-Qasas ayat 9, ketika ia menyampaikan harapan agar Musa menjadi penyejuk mata baginya dan Fir'aun. Kisah ini menunjukkan bahwa Asiyah memiliki keimanan yang berbeda dari suaminya."
+    }
+  },
+  {
+    "index": 299,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Medium",
+      "xp": 100,
+      "soal": "Siapakah nama raja yang dikalahkan oleh Nabi Dawud عليه السلام dalam peperangan yang disebutkan dalam Al-Qur'an?",
+      "opsi": [
+        "Fir'aun",
+        "Jalut",
+        "Namrud",
+        "Talut"
+      ],
+      "jawabanBenar": 1,
+      "penjelasan": "Jalut adalah tokoh yang dibunuh oleh Nabi Dawud عليه السلام dalam peperangan antara pasukan Talut dan pihak Jalut. Kisah ini disebutkan dalam Surah Al-Baqarah ayat 251. Setelah peristiwa tersebut, Allah memberikan kepada Dawud kerajaan dan hikmah serta mengajarkan kepadanya apa yang Dia kehendaki."
+    }
+  },
+  {
+    "index": 300,
+    "question": {
+      "kategori": "Tarikh",
+      "tingkat": "Hard",
+      "xp": 150,
+      "soal": "Pada masa Nabi Sulaiman عليه السلام, Kerajaan Saba dikenal memiliki sistem pengairan pertanian yang sangat maju. Apakah nama bendungan besar yang menjadi salah satu peninggalan peradaban tersebut?",
+      "opsi": [
+        "Bendungan Ma'rib",
+        "Bendungan Tabuk",
+        "Bendungan Qadisiyah",
+        "Bendungan Fustat"
+      ],
+      "jawabanBenar": 0,
+      "penjelasan": "Bendungan Ma'rib merupakan bendungan kuno yang terletak di Yaman dan menjadi bagian penting dari sistem pengairan peradaban Saba. Bendungan ini memungkinkan pengelolaan air untuk mendukung pertanian di kawasan yang relatif kering. Perlu dibedakan bahwa bendungan tersebut merupakan peninggalan peradaban Saba yang jauh lebih tua, bukan bangunan yang dapat dipastikan dibangun langsung oleh Nabi Sulaiman عليه السلام."
+    }
   }
 
 ]);
