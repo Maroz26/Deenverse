@@ -855,7 +855,8 @@
             document.getElementById('q-category').style.display = "inline-block";
             document.getElementById('q-text').className = "text-xl font-semibold leading-relaxed mb-8 text-slate-100";
             
-            let diffColor = q.tingkat === "Medium" ? "bg-amber-900/50 text-amber-400 border border-amber-500/30" : 
+            let diffColor = q.tingkat === "Easy" ? "bg-emerald-900/50 text-emerald-400 border border-emerald-500/30" :
+                            q.tingkat === "Medium" ? "bg-amber-900/50 text-amber-400 border border-amber-500/30" : 
                             q.tingkat === "Hard" ? "bg-orange-900/50 text-orange-400 border border-orange-500/30" : 
                             "bg-red-900/50 text-red-400 border border-red-500/30";
             document.getElementById('q-difficulty').className = `px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase shadow-sm ${diffColor}`;
